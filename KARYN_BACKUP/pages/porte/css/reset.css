@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* Browser Default Initialization
+*****************************************************************/
+html {
+	overflow-y: scroll;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td	{
+	margin: 0;	padding: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var	{
+	font-style: normal;
+}
+table	{
+	border-collapse: collapse;	border-spacing: 0;
+}
+caption, th	{
+	text-align: left;
+}
+q:before ,q:after	{
+	content: '';
+}
+object, embed	{
+	vertical-align: top;
+	border:none;
+}
+legend	{
+	display: none;
+}
+h1, h2, h3, h4, h5, h6	{
+	font-size: 100%;
+}
+img, abbr, acronym, fieldset	{
+	border: 0;
+}
+li	{
+	list-style-type: none;
+}
+p, dd, blockquote	{
+	text-align: justify;
+	text-justify: inter-ideograph;
+	line-break: normal; /*禁則処理*/
+}
+br {
+	letter-spacing: 0; /*ie対策*/
+}
+.clear {
+	clear:both;
+}
+.right {
+	float:right;
+}
+.left {
+	float:left;
+}
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+.clearfix { display: inline-table;  overflow:hidden; }
+.clear { clear:both; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/*google Chrome文字サイズ対策
+html, body {
+        -webkit-text-size-adjust: none;
+}
+*/

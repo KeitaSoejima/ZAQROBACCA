@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Raleway:wght@400;500;600&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    margin: unset;
+    padding-top: 70px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+p {
+    margin: unset;
+}
+
+a {
+    text-decoration: unset;
+    color: #000;
+    display: block;
+}
+
+dl, dd {
+    margin: unset;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    z-index: 999;
+}
+
+.header-logo {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    &-svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.award-banner {
+    padding: 0 15px;
+}
+
+.attention {
+    &-list {
+      position: relative;
+      padding: 100px 30px 50px;
+      background-color: #f5f5f5;
+      margin-top: 50px;
+    }
+    &-title {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 27px;
+    }
+    &-svg {
+        height: 100%;
+    }
+    &-text {
+        font-size: 1.2rem;
+    }
+}
+
+.product-visual {
+    margin-top: 50px;
+}
+
+.product {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 15px 0;
+    }
+    &-item {
+        width: calc(100% / 2 - 7.5px);
+        margin: 0 15px 20px 0;
+        &:nth-child(2n) {
+            margin-right: unset;
+        }
+    }
+    &-link {
+        padding: 25px 0;
+        background-color: #f5f5f5;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 0 15px;
+    }
+}
+
+.news {
+    &-list {
+        margin-top: 50px;
+    }
+    &-item {
+      padding: 25px 0;
+      background-color: #f5f5f5;
+      display: block;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+}
+
+.contents {
+  &-title {
+    text-align: center;
+    margin: 50px auto 30px;
+  }
+  &-headline {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1px;
+  }
+  &-addition {
+    font-size: 1.2rem;
+  }
+}
+
+.form {
+    &-general {
+        display: flex;
+        justify-content: center;
+        &-text {
+            outline: unset;
+            border: 1px solid #f5f5f5;
+            border-radius: 5px 0 0 5px;
+            width: 55%;
+            padding-left: 15px;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+            &::placeholder {
+              color: #f7f7f7;
+            }
+        }
+        &-submit {
+            padding: 12px 15px;
+            border: unset;
+            font-size: 1.2rem;
+            border-radius: 0 5px 5px 0;
+            background-color: #f5f5f5;
+        }
+    }
+}
+
+.mail-banner {
+    margin-top: 50px;
+}
+
+.footer {
+    padding: 50px 15px;
+    background-color: #f5f5f5;
+}
+
+.information {
+    &-menu {
+        border-bottom: 1px solid #ececec;
+    }
+    &-title {
+        position: relative;
+        font-size: 1.2rem;
+        padding: 10px 0;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 1px;
+            background-color: #c3c3c3;
+            transition: .5s;
+        }
+        &::before {
+            transform: rotate(0);
+        }
+        &::after {
+            transform: rotate(90deg);
+        }
+        &.active {
+            &::before {
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(135deg);
+            }
+        }
+    }
+    &-text {
+        font-size: 1.2rem;
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) { // 後で削除して中身を移動
+    .information {
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+        &-left, &-right {
+            width: calc(50% - 25px);
+        }
+        &-text {
+            display: unset;
+        }
+    }
+}
+
+
+
+/* Swiper */
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: unset;
+    left: unset;
+    width: unset;
+}
+
+.swiper-pagination {
+    position: unset;
+    margin: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #cfcfcf;
+    width: 9px !important;
+    height: 9px !important;
+    margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #dcdcdc;
+}
+
+.swiper-container {
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* RWD - SP */
+@media (max-width: 599px) {
+    .attention-br {
+        display: none;
+    }
+}
+
+
+
+
+
+/* RWD - PC */
+@media (min-width: 1200px) {
+    .swiper-pagination-bullet {
+        width: 11px !important;
+        height: 11px !important;
+        margin: 0 8px !important
+    }
+
+    .swiper-pagination {
+        margin: 30px auto 55px;
+    }
+
+    .award-banner {
+        padding: unset;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .product-visual {
+        max-width: 1200px;
+        margin: 100px auto 25px;
+    }
+
+    .attention {
+        &-list {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            box-sizing: border-box;
+        }
+        &-text {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+
+    .product {
+        &-list {
+            max-width: 1200px;
+            margin: auto;
+            padding: unset;
+        }
+        &-item {
+            width: calc(100% / 4 - 18.75px);
+            margin: 0 25px 25px 0;
+            &:nth-child(2n) {
+                margin-right: 25px;
+            }
+            &:nth-child(4n) {
+                margin-right: unset;
+            }
+        }
+        &-link {
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+
+    .news {
+        &-list {
+            max-width: 1200px;
+            margin: 100px auto 0;
+        }
+        &-item {
+        }
+    }
+
+    .contents {
+        &-title {
+          margin: 100px auto 30px;
+        }
+    }
+
+    .mail-banner {
+        max-width: 1200px;
+        margin: 100px auto 0;
+    }
+
+}

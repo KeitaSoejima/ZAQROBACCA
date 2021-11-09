@@ -1,0 +1,39 @@
+<footer class="footer">
+    <div class="contents-title">
+        <h2 class="contents-headline">INFORMATION</h2>
+        <span class="contents-addition">お買い物前にご確認ください</span></h2>
+    </div>
+    <a href="#" class="shopping-link"></a>
+
+    <div class="information-wrap">
+        <div class="information-left">
+            <dl class="information-menu">
+                <dt class="information-title">お支払いについて</dt>
+                <dd class="information-text">
+                    クレジットカード決済：各種カード会社<br>
+                    楽天バンク決済：共同購入、オークションではご利用できません<br>
+                    銀行振込：楽天銀行（ラクテンギンコウ）※振込手数料はお客様負担<br>
+                    <img src="img/index/payment.jpg" alt="PAYMENT">
+                </dd>
+            </dl>
+        </div>
+        <div class="information-right">
+          <dl class="information-menu">
+              <dt class="information-title">お支払いについて</dt>
+              <dd class="information-text">
+                  クレジットカード決済：各種カード会社<br>
+                  楽天バンク決済：共同購入、オークションではご利用できません<br>
+                  銀行振込：楽天銀行（ラクテンギンコウ）※振込手数料はお客様負担<br>
+              </dd>
+          </dl>
+        </div>
+    </div>
+</footer>
+<script>
+    $(function() {
+        $('.information-title').on('click', function() {
+            $(this).toggleClass('active');
+            $(this).next().slideToggle();
+        });
+    });
+</script>

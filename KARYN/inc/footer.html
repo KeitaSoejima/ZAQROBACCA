@@ -1,9 +1,10 @@
 <footer class="footer">
-    <div class="contents-title">
+    <div class="contents-title contents-title-footer">
         <h2 class="contents-headline">INFORMATION</h2>
         <span class="contents-addition">お買い物前にご確認ください</span></h2>
     </div>
-    <a href="#" class="shopping-link"></a>
+
+    <a class="information-link" href="https://www.rakuten.co.jp/victolieve/info2.html">ご注文前にご一読ください「決済・配送・返品について」</a>
 
     <div class="information-wrap">
         <div class="information-left">
@@ -13,27 +14,93 @@
                     クレジットカード決済：各種カード会社<br>
                     楽天バンク決済：共同購入、オークションではご利用できません<br>
                     銀行振込：楽天銀行（ラクテンギンコウ）※振込手数料はお客様負担<br>
-                    <img src="img/index/payment.jpg" alt="PAYMENT">
+                    <img class="payment-img" src="img/index/payment.jpg" alt="PAYMENT">
+                </dd>
+            </dl>
+            <dl class="information-menu">
+                <dt class="information-title">配送について</dt>
+                <dd class="information-text">
+                    配送は基本的に西濃運輸でのお届けとなります。<br>
+                    ※現在、ラッピングサービス・メール便での発送は承っておりません。予めご了承ください。<br>
+                    ※交通事情・天候等により、ご希望頂いた日時にお届けできない場合がございます。<br>
+                    ※一部の地域で日時指定できない場合があります。予めご了承ください。<br>
+                    ※海外への発送は行っておりません。
+                </dd>
+            </dl>
+            <dl class="information-menu">
+                <dt class="information-title">送料について</dt>
+                <dd class="information-text">
+                    10,800円（税込）以上のお買い物で送料無料（沖縄・離島を除く）<br>
+                    ※沖縄・離島の方は別途中継料をご負担いただいております。<br>
+                    メールにてご連絡致します。
+                    <table class="postage-table">
+                        <tr>
+                            <th>地域</th><td>北海道</td><td>東北</td><td>信越</td><td>関東・北陸</td><td>関西・東海</td><td>中国</td><td>四国</td><td>九州</td><td>沖縄</td>
+                        </tr>
+                        <tr>
+                            <th>送料</th><td>1188円</td><td>1080円</td><td>864円</td><td>756円</td><td>648円</td><td>432円</td><td>540円</td><td>324円</td><td>1512円</td>
+                        </tr>
+                    </table>
                 </dd>
             </dl>
         </div>
         <div class="information-right">
-          <dl class="information-menu">
-              <dt class="information-title">お支払いについて</dt>
-              <dd class="information-text">
-                  クレジットカード決済：各種カード会社<br>
-                  楽天バンク決済：共同購入、オークションではご利用できません<br>
-                  銀行振込：楽天銀行（ラクテンギンコウ）※振込手数料はお客様負担<br>
-              </dd>
-          </dl>
+            <dl class="information-menu">
+                <dt class="information-title">営業日について</dt>
+                <dd class="information-text">
+                    ネットでのご注文は24時間受け付けております。<br>
+                    お電話でのお問い合わせは下記の時間帯にお願いします。<br>
+                    平日 10:00-17:00　電話 092-441-6767<br>
+                    ※メールの返信は翌営業日以降となりますので、ご了承ください。
+                </dd>
+            </dl>
+            <dl class="information-menu">
+                <dt class="information-title">キャンセル・変更について</dt>
+                <dd class="information-text">
+                    ご注文後の支払方法や送付先のご変更がある場合、 <br>
+                    注意点をご確認の上、弊社発送予定日の前営業日午後15時までに<br>
+                    メールかお電話にてご連絡ください。<br><br>
+
+                    商品発送後のキャンセルにつきましては、<br>
+                    商品の初期不良及び ご注文の商品と異なる商品が届いた場合に限らせて頂きます。<br><br>
+
+                    連絡先<br>
+                    電話：092-441-6767<br>
+                    メール：victolieve@shop.rakuten.co.jp
+                </dd>
+            </dl>
+            <dl class="information-menu">
+                <dt class="information-title">商品返品・交換について</dt>
+                <dd class="information-text">
+                    商品画像はできる限り実物を再現するよう心掛けておりますが、<br>
+                    ご利用のモニター、環境等により、若干差異が生じる場合がございますので<br>
+                    予めご了承ください。お客様のご都合による返品はお断りしております。<br>
+                    気になる点がございましたらご購入前にご相談ください。
+                </dd>
+            </dl>
+            <dl class="information-menu">
+                <dt class="information-title">プライバシーについて</dt>
+                <dd class="information-text">
+                    お客様の個人情報の管理及び守秘義務につきまして、
+                    第三者に氏名・住所・電話番号・メールアドレス等を 公開することはございません。
+                    また、譲渡流用・利用することも一切ございませんので、
+                    安心してお買い物をお楽しみ下さい。
+                </dd>
+            </dl>
         </div>
     </div>
+
+    <p class="copyright"><small>© 2021 Victolieve Co., Ltd. All rights Reserved.</small></p>
 </footer>
 <script>
     $(function() {
-        $('.information-title').on('click', function() {
-            $(this).toggleClass('active');
-            $(this).next().slideToggle();
-        });
+        if(window.matchMedia("(max-width: 1200px)").matches){
+            $('.information-title').on('click', function() { // 1200以下
+                $(this).toggleClass('active');
+                $(this).next().slideToggle();
+            });
+        } else { // 1200以上
+
+        }
     });
 </script>

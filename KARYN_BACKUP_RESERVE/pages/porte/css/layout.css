@@ -1,0 +1,587 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,600|Mitr:200,400);
+
+/* Font
+*****************************************************************/
+
+
+body {
+  	font-family:"游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  	font-weight: 500;
+	line-height: 1.8em;
+	letter-spacing: 0;
+}
+
+
+html { font-size: 62.5%; }
+body { font-size: 13px; font-size: 1.3rem; }
+
+
+/* Font */
+.gf {
+	font-family: 'Ibarra Real Nova', serif;
+}
+
+.gf2 {
+	font-family: 'Mitr', sans-serif;
+}
+
+a {
+	color: #000;
+	text-decoration:none;
+}
+
+a img {
+	transition: 0.4s ;
+}
+
+a img:hover {
+	opacity: 0.5 ;
+}
+
+body {
+	text-align: center;
+}
+
+
+/* Common
+*****************************************************************/
+
+
+::selection {
+	background: pink;
+}
+
+
+::-moz-selection {
+	background: pink;
+}
+
+
+/* header
+*****************************************************************/
+
+.header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header .head_image {
+	margin-top: 140px;
+}
+
+.header h1 {
+	position: relative;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 95px auto 60px;
+	line-height: 1.2em;
+}
+
+.header h1:after {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	content: "";
+	border-bottom: 1px dashed #000;
+	width: 218px;
+	height: 1px;
+}
+
+.header p {
+	text-align: center;
+	margin-bottom: 110px;
+}
+
+
+/* main
+*****************************************************************/
+
+.wrapper {
+	width: 100%;
+}
+
+.inner {
+	width: 900px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}
+
+
+/* instagram */
+
+.insta {
+	position: relative;
+	background-color: #f4e2dc;
+	background-image: url(../images/bg_stripe.png);
+	background-repeat: repeat-x;
+	padding: 180px 0;
+}
+
+.insta ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.insta li {
+	margin-bottom: 35px;
+}
+
+.insta p {
+	margin: 30px auto 0;
+	text-align: center;
+}
+
+.insta .line {
+	width: 100%;
+	height: 72px;
+	position: absolute;
+	bottom: 0;
+	background-image: url(../images/bg_stripe.png);
+	background-repeat: repeat-x;
+}
+
+/* pick up */
+
+.pick_up {
+	background-color: #e1e0ec;
+	padding: 50px 0 100px;
+}
+
+.pick_up p.title {
+	display: block;
+	margin: 75px auto 0 auto;
+	text-align: center;
+}
+
+.pick_up .sp_box {
+	margin-top: 100px;
+}
+
+.pick_up .sp_box p {
+	color: #808080;
+	text-align: center;
+}
+
+.pick_up .sp_box p.item_name {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 30px;
+}
+
+.pick_up .sp_box p.item_price {
+	font-weight: 200;
+}
+
+ul.iphone_size {
+	color: #808080;
+	width: 690px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 50px auto;
+}
+
+ul.iphone_size li p.color {
+	text-align: center;
+	font-weight: 200;
+}
+
+
+/* whats */
+
+.whats {
+	position: relative;
+	padding-bottom: 240px;
+}
+
+.whats .exp_box {
+	position: relative;
+	height: 450px;
+	margin-bottom: 120px;
+}
+
+.whats .exp_box.box01 {
+	margin-bottom: 0!important;
+	height: auto!important;
+}
+
+.whats .exp_box .title {
+	position: relative;
+	margin-top: 150px;
+	margin-bottom: 25px;
+	z-index: 10;
+}
+
+.whats .exp_box .txt {
+	z-index: 10;
+}
+
+.whats .exp_box .r_img {
+	position: absolute;
+	z-index: 1;
+	right: 45px;
+}
+
+.whats .exp_box .l_img {
+	position: absolute;
+	z-index: 1;
+	left: 30px;
+}
+
+.box02 .title, .box03 .title, .box04 .title,
+.box05 .title, .box06 .title, .box07 .title {
+	padding-top: 150px;
+}
+
+.box02 .txt, .box04 .txt, .box06 .txt {
+	margin-left: 50px;
+}
+
+.box03 .title {
+	margin-left: 500px;
+}
+
+.box03 .txt {
+	margin-left: 550px;
+}
+
+.box05 .title {
+	margin-left: 500px;
+}
+
+.box05 .txt {
+	margin-left: 550px;
+}
+
+.box07 .title {
+	margin-left: 500px;
+}
+
+.box07 .txt {
+	margin-left: 550px;
+}
+
+.box07 {
+	margin-bottom: 0!important;
+}
+
+.whats .wave {
+	width: 100%;
+	height: 72px;
+	position: absolute;
+	bottom: 0;
+	background-image: url(../images/bg_wave.png);
+	background-repeat: repeat-x;
+}
+
+/* image-photo */
+
+.image-photo {
+	background-color: #d0ded6;
+	padding: 100px 0 50px;
+}
+
+.image-photo .catch {
+	color: #ff9d98;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.image-photo ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 100px auto 0;
+}
+
+.image-photo li {
+	margin-bottom: 35px;
+}
+
+
+/* collection */
+
+.collection {
+	background-image: url(../images/bg_wave2.png);
+	background-repeat: repeat-x;
+	background-color: #f2e6d8;
+	padding: 200px 0 100px;
+}
+
+.collection h2 {
+	font-size: 20px;
+	letter-spacing: 0.3em;
+}
+
+.collection ul {
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 100px auto 0;
+}
+
+.collection ul li {
+	margin: 0 50px 50px 0;
+}
+
+.collection ul li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.collection ul li p {
+	text-align: center;
+	font-weight: 200;
+	line-height: 1em;
+}
+
+/* SP
+*****************************************************************/
+
+.sp {
+	display: none;
+}
+
+@media screen and (max-width: 736px) {
+
+	.pc {
+		display: none;
+	}
+
+	.sp {
+		display: inline-block;
+	}
+
+	/* header */
+
+	.header {
+		width: 94%;
+		margin: 0 3% 0;
+	}
+
+	.header .head_image {
+		margin: 30px 0 0;
+	}
+
+	.header .head_image img {
+		width: 100%;
+		height: auto;
+	}
+
+	.header h1 {
+		margin: 30px auto 60px;
+	}
+
+	.header p.txt {
+		width: 80%;
+		font-size: 11px;
+		text-align: justify;
+		margin: 0 auto 60px;
+	}
+
+	/* main */
+
+	.inner {
+		width: 94%;
+		margin: 0 3%;
+	}
+
+	/* instagram */
+
+	.insta {
+		background-color: #f4e2dc;
+		padding: 140px 0;
+	}
+
+	.insta li {
+		width: 48%;
+		margin-bottom: 15px;
+	}
+
+	.insta li img {
+		width: 100%;
+		height: auto;
+	}
+
+	.insta p {
+		margin: 30px auto 0;
+		text-align: center;
+	}
+
+	/* pick up */
+
+	.pick_up {
+		background-color: #e1e0ec;
+		padding: 50px 0 100px;
+	}
+
+	.pick_up p.title {
+		display: block;
+		margin: 75px auto 0 auto;
+		text-align: center;
+	}
+
+	.pick_up .sp_box {
+		margin-top: 100px;
+	}
+
+	.pick_up .sp_box p.item_name {
+		margin-top: 30px;
+	}
+
+	ul.iphone_size {
+		width: 82%;
+		margin: 25px auto;
+	}
+
+	ul.iphone_size li {
+		margin-bottom: 20px;
+	}
+
+	/* whats */
+
+	.whats {
+		margin: 60px auto -30px;
+	}
+
+	.whats .exp_box {
+		width: 100%;
+		height: auto;
+		min-height: 180px;
+		margin-bottom: 30px;
+	}
+
+	.whats .exp_box.box01 {
+		margin-bottom: 0!important;
+	}
+
+	.whats .exp_box .title {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.whats .exp_box .title img {
+		zoom: 0.5;
+	}
+
+	.whats .exp_box .txt {
+		z-index: 10;
+	}
+
+	.whats .exp_box .r_img {
+		position: absolute;
+		z-index: 1;
+		right: 0;
+	}
+
+	.whats .exp_box .r_img img {
+		width: 45%;
+		height: auto;
+		float: right;
+	}
+
+	.whats .exp_box .l_img {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+	}
+
+	.whats .exp_box .l_img img {
+		width: 45%;
+		height: auto;
+		float: left;
+	}
+
+	.box02 .title, .box03 .title, .box04 .title,
+	.box05 .title, .box06 .title, .box07 .title {
+		padding-top: 0!important;
+	}
+
+	.box03 .title, .box05 .title, .box07 .title {
+		margin-left: 50%;
+	}
+
+	.box02 .txt, .box03 .txt, .box04 .txt,
+	.box05 .txt, .box06 .txt, .box07 .txt {
+		font-size: 11px;
+		margin-left: 0;
+		width: 45%;
+	}
+
+	.box03 .txt, .box05 .txt, .box07 .txt {
+		margin-left: 50%;
+		width: 45%;
+	}
+
+	.box07 {
+		margin-bottom: -100px!important;
+	}
+
+	.whats .wave {
+		background-image: url(../images/bg_wave.png);
+		background-repeat: repeat-x;
+		background-size: contain;
+		width: 100%;
+	}
+
+	/* image-photo */
+
+	.image-photo ul {
+		margin: 50px auto 0;
+	}
+
+	.image-photo li {
+		width: 48%;
+		margin-bottom: 15px;
+	}
+
+	.image-photo li img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* collection */
+
+	.collection {
+		background-image: url(../images/bg_wave2.png);
+		background-repeat: repeat-x;
+		background-color: #f2e6d8;
+		padding: 200px 0 60px;
+	}
+
+	.collection h2 {
+		font-size: 20px;
+		letter-spacing: 0.3em;
+	}
+
+	.collection ul {
+		width: 100%;
+		margin: 100px auto 0;
+	}
+
+	.collection ul li {
+		width: 40%;
+		margin: 0 5% 60px 5%;
+	}
+
+	.collection ul li img {
+		width: 100%;
+		height: auto;
+	}
+
+}

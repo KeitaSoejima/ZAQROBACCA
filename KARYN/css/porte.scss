@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+JP&display=swap');
+
+.porte-headline {
+    margin: 0 30px;
+    &-title {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    &-text {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.4rem;
+    }
+}
+
+.porte-visual {
+    background-image: url('../img/porte/main-visual.jpg');
+    background-size: cover;
+    background-position: top 15% center;
+    width: 100%;
+    min-height: 414px;
+    position: relative;
+    margin-bottom: 100px;
+    &-title {
+        position: absolute;
+        top: 30%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+    }
+    &-svg {
+        fill: #fff;
+        display: block;
+        max-width: 120px;
+        &-main {
+            max-height: 30px;
+            margin-bottom: 8px;
+        }
+        &-sub {
+            max-height: 12px;
+        }
+    }
+}
+
+.porte-description {
+    margin-bottom: 100px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+    &-item {
+        opacity: 0;
+        width: calc(50% - 7.5px);
+        &:last-child {
+            margin-top: 60px;
+        }
+    }
+    &-sentence {
+        margin: -35px 30px 0;
+    }
+    &-title {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    &-text {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: unset;
+        }
+        br {
+            display: none;
+        }
+    }
+}
+
+.porte-points {
+    &-wrap {
+        background-color: #f5f5f5;
+        padding: 100px 0;
+    }
+    &-list {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 7.5px;
+        margin-top: 50px;
+    }
+    &-item {
+        width: 80%;
+        flex-shrink: 0;
+        margin: 0 7.5px;
+    }
+    &-img {
+        position: relative;
+    }
+    &-tag {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Libre Baskerville', serif;
+        background-color: #000;
+        color: #fff;
+        width: 50%;
+    }
+    &-sentence {
+        font-family: 'Noto Serif JP', serif;
+        padding: 30px;
+        background-color: #fff;
+    }
+    &-title {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &-text {
+        font-size: 1.3rem;
+    }
+}
+
+/* Animation : Fade up */
+.fadeUp {
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation : Slide in */
+.slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+
+// .slide-in_inner {
+//     display: inline-block;
+// }
+
+/* 左右のアニメーション */
+.leftAnime{
+    opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+    animation-name:slideTextX100;
+    animation-duration: 1.2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+  transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+  transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+    animation-name: slideTextX-100;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX-100 {
+    from {
+        transform: translateX(100%); /*要素を右の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0); /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+/* RWD - SP */
+@media (max-width: 599px) {
+}
+
+
+/* RWD - PC */
+@media (min-width: 1200px) {
+
+    .porte-headline {
+        &-title {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+        &-text {
+            font-size: 1.8rem;
+        }
+    }
+
+    .porte-visual {
+        min-height: 750px;
+        margin-bottom: 150px;
+        &-title {
+            top: 50%;
+            left: 60%;
+        }
+        &-svg {
+            max-width: 230px;
+            &-main {
+                max-height: 40px;
+                margin-bottom: 15px;
+            }
+            &-sub {
+                max-height: 18px;
+            }
+        }
+    }
+
+    .porte-description {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto 150px;
+        &-list, &-sentence {
+            width: calc(50% - 25px);
+        }
+        &-list {
+            padding: unset;
+        }
+        &-item {
+            width: calc(50% - 17.5px);
+        }
+        &-sentence {
+            margin: unset;
+        }
+        &-title {
+            font-size: 4rem;
+        }
+        &-text {
+            font-size: 1.8rem;
+        }
+    }
+
+    .porte-points {
+        max-width: 1200px;
+        margin: auto;
+        &-list {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: unset;
+        }
+        &-item {
+            width: calc(100% / 3 - 33.33px);
+        }
+    }
+}

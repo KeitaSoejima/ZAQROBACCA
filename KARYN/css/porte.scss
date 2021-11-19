@@ -10,6 +10,9 @@
     &-text {
         font-family: 'Noto Serif JP', serif;
         font-size: 1.4rem;
+        br {
+            display: none;
+        }
     }
 }
 
@@ -89,6 +92,7 @@
         margin-top: 50px;
     }
     &-item {
+        opacity: 0;
         width: 80%;
         flex-shrink: 0;
         margin: 0 7.5px;
@@ -207,12 +211,16 @@
 @media (min-width: 1200px) {
 
     .porte-headline {
+        margin: unset;
         &-title {
             font-size: 4rem;
             margin-bottom: 15px;
         }
         &-text {
             font-size: 1.8rem;
+            br {
+                display: block;
+            }
         }
     }
 
@@ -257,19 +265,37 @@
         }
         &-text {
             font-size: 1.8rem;
+            br {
+                display: block;
+            }
         }
     }
 
     .porte-points {
         max-width: 1200px;
         margin: auto;
+        &-wrap {
+            padding: 150px 0;
+            margin-bottom: 150px;
+        }
         &-list {
             flex-wrap: wrap;
             justify-content: space-between;
             padding: unset;
+            overflow-x: unset;
         }
         &-item {
             width: calc(100% / 3 - 33.33px);
+            margin: 0 0 50px;
+            &:nth-last-child(-n + 3) {
+                margin-bottom: unset;
+            }
+        }
+        &-title {
+            font-size: 3rem;
+        }
+        &-text {
+            font-size: 1.4rem;
         }
     }
 }

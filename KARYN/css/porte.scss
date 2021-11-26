@@ -27,7 +27,7 @@
     background-size: cover;
     background-position: top 15% center;
     width: 100%;
-    min-height: 414px;
+    min-height: 500px;
     position: relative;
     margin-bottom: 100px;
     &-title {
@@ -184,6 +184,10 @@
         &-version {
             font-family: 'Noto Serif JP', serif;
         }
+        &-sub {
+            font-size: 1.4rem;
+            margin-left: 5px;
+        }
     }
     &-text {
         font-size: 1.2rem;
@@ -286,6 +290,35 @@
     &-box {
         margin: 0 7.5px;
     }
+    &-qr {
+        text-align: center;
+        &-box {
+            opacity: 0;
+        }
+        &-img {
+            max-width: 67px;
+        }
+        &-link {
+            margin: 30px 30px 0;
+            background-color: #f5f5f5;
+            padding: 15px 0;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.porte-life {
+    margin-top: 100px;
+    &-list {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 7.5px;
+        margin-top: 30px;
+    }
+    &-item {
+        opacity: 0;
+        margin: 0 7.5px;
+    }
 }
 
 .slick-slide {
@@ -295,11 +328,12 @@
 .slick-dots {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  padding: unset;
+  margin: 30px 0 50px;
   li {
     position: relative;
-    width: 35px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     margin: 0 5px;
     cursor: pointer;
     background-color: #f5f5f5;
@@ -495,6 +529,8 @@
             }
         }
         &-item {
+            position: relative;
+            padding-bottom: 65px !important;
             width: calc(50% - 25px);
             &:nth-child(2n) {
                 padding: unset;
@@ -515,12 +551,77 @@
         &-sentence {
             padding: unset;
         }
+        &-title {
+            font-size: 3rem;
+        }
         &-link {
+            position: absolute;
+            bottom: 0;
             padding: 20px 30px;
             text-align: unset;
+            width: 70%;
         }
         &-accordion {
-            display: none;
+            &-wrap {
+                display: none;
+            }
+        }
+    }
+
+    .porte-ensemble {
+        max-width: 1200px;
+        margin: 150px auto 0;
+        &-visual {
+            margin: 50px 0;
+        }
+        &-sentence {
+            padding: unset;
+        }
+        &-title {
+            font-size: 3rem;
+        }
+        &-text {
+            font-size: 1.8rem;
+        }
+    }
+
+    .porte-instagram {
+        &-headline {
+            &-wrap {
+                max-width: 1200px;
+                margin: auto;
+            }
+        }
+        &-list {
+            margin-top: 50px;
+        }
+        &-box {
+            margin: 0 15px;
+        }
+        &-qr {
+            &-link {
+                margin: 30px auto 0;
+                max-width: 300px;
+            }
+        }
+    }
+
+    .porte-life {
+        max-width: 1200px;
+        margin: 150px auto 0;
+        &-list {
+            overflow-x : unset;
+            padding: unset;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        &-item {
+            margin: 0 0 50px 0;
+            max-width: 263px;
+            &:nth-last-child(-n + 4) {
+                margin-bottom: unset;
+            }
         }
     }
 }

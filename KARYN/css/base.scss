@@ -309,9 +309,9 @@ header {
 
 .swiper-pagination-bullet {
     background-color: #cfcfcf;
-    width: 9px !important;
-    height: 9px !important;
-    margin: 0 6px !important;
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 7px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -340,9 +340,9 @@ header {
 /* RWD - PC */
 @media (min-width: 1200px) {
     .swiper-pagination-bullet {
-        width: 11px !important;
-        height: 11px !important;
-        margin: 0 8px !important
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 7px !important
     }
 
     .swiper-pagination {
@@ -351,18 +351,18 @@ header {
 
     .award-banner {
         padding: unset;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
     }
 
     .product-visual {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 100px auto 25px;
     }
 
     .attention {
         &-list {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 100px auto 0;
             padding: 105px 30px 50px;
             box-sizing: border-box;
@@ -379,7 +379,7 @@ header {
 
     .product {
         &-list {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: auto;
             padding: unset;
         }
@@ -401,7 +401,7 @@ header {
 
     .news {
         &-list {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 100px auto 0;
         }
         &-item {
@@ -418,7 +418,7 @@ header {
     }
 
     .mail-banner {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 100px auto 0;
     }
 
@@ -435,7 +435,7 @@ header {
         &-wrap {
             display: flex;
             justify-content: space-between;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 30px auto 50px;
         }
         &-left, &-right {

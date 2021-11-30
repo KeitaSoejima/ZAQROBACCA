@@ -160,6 +160,9 @@ header {
     &-title {
         text-align: center;
         margin: 50px auto 30px;
+        &-form-general {
+            margin: 15px auto 30px;
+        }
         &-footer {
             margin: auto auto 30px;
         }
@@ -179,16 +182,17 @@ header {
     &-general {
         display: flex;
         justify-content: center;
+        margin-bottom: 80px;
         &-text {
             outline: unset;
-            border: 1px solid #f5f5f5;
+            border: 1px solid #ebebeb;
             border-radius: 5px 0 0 5px;
             width: 55%;
             padding-left: 15px;
             box-sizing: border-box;
             font-size: 1.2rem;
             &::placeholder {
-              color: #f7f7f7;
+              color: #cecece;
             }
         }
         &-submit {
@@ -196,7 +200,7 @@ header {
             border: unset;
             font-size: 1.2rem;
             border-radius: 0 5px 5px 0;
-            background-color: #f5f5f5;
+            background-color: #ebebeb;
             color: #000;
         }
     }
@@ -349,6 +353,13 @@ header {
         margin: 30px auto 55px;
     }
 
+    .form {
+        &-general {
+            max-width: 1000px;
+            margin: auto auto 130px;
+        }
+    }
+
     .award-banner {
         padding: unset;
         max-width: 1000px;
@@ -411,6 +422,9 @@ header {
     .contents {
         &-title {
             margin: 100px auto 30px;
+            &-form-general {
+                margin: 0 auto 30px;
+            }
             &-footer {
                 margin: auto auto 30px;
             }

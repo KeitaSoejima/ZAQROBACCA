@@ -1,0 +1,49 @@
+
+table{
+	font-size:14px;
+	color:#1D54A7;
+}
+table img{
+	vertical-align:middle;
+	widht:130;
+
+}
+.s{
+	padding:5px;
+}
+.d{
+	border-bottom:#ccc 1px solid;
+}
+.dot{	
+	border-bottom:dotted 1px #ccc;
+	vartical-align:bottom;
+	padding-left:10px;
+}
+.sita{
+	text-align:right;
+}
+.bott{
+	border-bottom:1px #ccc solid;
+}
+.ma{
+	padding-right:10px;
+	color:#BF0000;
+	font-weight:bold;
+	font-size:18px;
+}
+.day{
+	color:#463519;
+	font-weight:bold;
+	font-size:16px;
+	padding-top:15px;
+}
+.ue{	
+	font-size:16px;
+
+	font-weight:bold;
+}
+
+#rk1{
+background-color:#FFEBE0;
+}
+

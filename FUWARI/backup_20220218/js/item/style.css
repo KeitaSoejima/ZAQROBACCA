@@ -1,0 +1,85 @@
+@charset"Shift_JIS";
+
+body {font-size:14px; line-height:140%; color:#333333; font-family:"ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;}
+a:link, a:visited{ text-decoration:none; color:#333333;}
+a:hover{ text-decoration:none; color:#c90926;}
+a:hover img { filter: alpha(opacity=70);  -moz-opacity:0.70;  opacity:0.70;}
+
+
+
+div#wrap{
+	width:1100px;
+	height:240px;
+	_height:235px;
+	overflow:hidden;
+	z-index:1;
+	position:relative;
+}
+
+/*GoogleChromeóp*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+div#wrap{
+  height:235px;
+}
+}
+
+
+div#wrap img{
+  cursor:pointer;
+}
+
+div#ScrollArea{
+  width:1100px;
+}
+
+div#ScrollArea ul{
+ margin:0px;
+ margin-top:8px;
+ padding:0px;
+}
+
+div#ScrollArea li{
+  float:left;
+  position:relative;	
+  text-align:center;
+  list-style:none;
+}
+
+div#ScrollArea li img{
+	margin-bottom:5px;
+	border:solid 1px #ccc;
+}
+
+#Leftbtn{
+	width:21px;
+	height:100%;
+	z-index:999;
+ background-color:white;
+ 	cursor:pointer;
+	position:absolute;
+	/*left:-2px;*/
+ padding-top:70px;
+}
+
+
+
+
+#Rightbtn{
+	width:31px;
+	height:100%;
+	z-index:999;
+ background-color:white;
+	cursor:pointer;
+	position:absolute;
+ padding-top:70px;
+	right:-10px;
+	
+}
+
+
+
+
+.clear
+	{
+	clear: both;
+	}

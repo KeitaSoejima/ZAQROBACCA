@@ -1,0 +1,595 @@
+<!--Powerd by ECステーション（カメレオンテンプレート）-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="shift_jis">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>grid_name_in</title>
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./simple_slider01_common.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <!-- css タイプ別 -->
+    <link rel="stylesheet" href="./new.css">
+
+    <!-- script -->
+    <script src="./jquery.js"></script>
+
+    <!-- 拡張用style -->
+    <style>
+        /* --- title用　ここから --- */
+
+        .titleArea {
+            /* タイトル箇所表示(flex)、非表示(none!important) */
+            display: flex;
+            /* タイトル下の間隔広さ */
+            margin-bottom: 10px;
+        }
+
+        .titleText {
+            /* タイトル文字色 */
+            color: #555;
+            /* タイトルテキストサイズ */
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: normal;
+        }
+
+        #sp .titleText{
+            /* タイトルテキストサイズ */
+            font-size: 18px;
+            line-height: calc(18px + 1px);
+            font-weight: normal;
+        }
+
+        .updateDate {
+            /* 更新日表示(block)、非表示(none) */
+            display: block;
+            /* 更新日文字色 */
+            color: #555;
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: 11px;
+            font-weight: normal;
+        }
+
+        #sp .updateDate {
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: calc(11px + 1px);
+            font-weight: normal;
+        }
+
+        .titleBack02 .titleArea {
+            /* 背景オン時の背景色 */
+            background-color: #ececec;
+            /* テキスト上下の間隔広さ */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea,
+        .titleBack04 .titleArea {
+            /* テキスト下の間隔広さ */
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea {
+            /* 罫線設定 */
+            border-bottom: 1px solid #999;
+        }
+
+        .titleBack04 .titleArea:before {
+            /* 罫線設定 */
+            border-bottom: 13px solid #ffd9e2;
+        }
+
+        /* --- title用　ここまで --- */
+
+        /* --- hover時の効果　ここから --- */
+
+        .contents#pc a:hover img {
+            /* 拡大サイズ デフォルト scale(1.3) オフ scale(1) */
+            transform: scale(1.3);
+        }
+
+        /* --- hover時の効果　ここまで --- */
+
+        /* --- 個別設定 --- */
+
+        .imgWrapper{
+            border: 0px solid #efefef;
+	    box-sizing: border-box;
+        }
+
+        .imgWrapper img{
+            margin-top: -0px;
+            margin-left: -0px;
+        }
+
+        #pc .all_out .textArea .name {
+            display: block;
+            color: #555;
+            font-size: !important;
+            max-height: unset;
+            font-weight: normal;
+        }
+
+        #sp .all_out .textArea .name {
+            display: block;
+            color: #555;
+            font-size: !important;
+            max-height: unset;
+            font-weight: normal;
+        }
+
+        #pc .all_out .textArea .price {
+            display: block;
+            color: #ff0000;
+            font-size: !important;
+            font-weight: bold;
+        }
+
+        #sp .all_out .textArea .price {
+            display: block;
+            color: #ff0000;
+            font-size: !important;
+            font-weight: bold;
+        }
+        .new01_S .newTag,
+        .new01_M .newTag,
+        .new01_L .newTag {
+            left: 0;
+            background: #C7243A;
+            color: #fff;
+        }
+
+        .new02_S .newTag,
+        .new02_M .newTag,
+        .new02_L .newTag {
+            background: #ababab;
+            color: #fff;
+        }
+
+        #pc .newTag{
+            font-size: !important;
+            font-weight: normal;
+        }
+
+        #sp .newTag{
+            font-size: !important;
+            font-weight: normal;
+        }
+
+        #pc .newDate{
+            display: block;
+            font-size: !important;
+            font-weight: normal;
+            color: #C7243A;
+        }
+
+        #sp .newDate{
+            display: block;
+            font-size: !important;
+            font-weight: normal;
+            color: #C7243A;
+        }
+
+        /* --- 個別設定　ここまで --- */
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="contents titleBack01 titlePattern circle grid02  new01_S display05 sp_display03">
+            <div class="titleArea">
+                <p class="titleText"></p>
+                <p class="updateDate">更新：2022年02月14日(月) 10:14:12</p>
+            </div>
+
+            <div class="outer">
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/206-293/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/4534253262930.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月26日新着</p>
+                        <div class="textArea">
+                            <p class="name">にょろにょろくねくねくん｜</p>
+                            <p class="price">￥275</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/cl-3931/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/kemppi.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月26日新着</p>
+                        <div class="textArea">
+                            <p class="name">【ポイント20倍最終日】 ウォールクロック ...</p>
+                            <p class="price">￥10,780</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002729/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/chimmypasscase01.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月23日新着</p>
+                        <div class="textArea">
+                            <p class="name">BT21 パスケース CHIMMY｜</p>
+                            <p class="price">￥2,200</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/george_suyasuya/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/george_suyasuya01.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月23日新着</p>
+                        <div class="textArea">
+                            <p class="name">Curious George すやすやジョージ</p>
+                            <p class="price">￥2,420</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002728/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/imgrc0132445741.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月16日新着</p>
+                        <div class="textArea">
+                            <p class="name">【1月下旬発売予約受付中】東京リベンジャーズ...</p>
+                            <p class="price">￥9,800</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/heapin-pfg033-2201/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/heapin-pfg033-1.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月14日新着</p>
+                        <div class="textArea">
+                            <p class="name">【ポイント20倍】 ヘアピン Cute Se...</p>
+                            <p class="price">￥605</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/heapin-pfg045-2201/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/heapin-pfg045-1.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月14日新着</p>
+                        <div class="textArea">
+                            <p class="name">【ポイント20倍】 ヘアピン Cute Se...</p>
+                            <p class="price">￥385</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hairtie-chs012-2201/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/hairtie-chs012-1.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月14日新着</p>
+                        <div class="textArea">
+                            <p class="name">【ポイント20倍】 ヘアゴム CuteSet...</p>
+                            <p class="price">￥550</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hairtie-chs015-2201/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/hairtie-chs015-1.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月14日新着</p>
+                        <div class="textArea">
+                            <p class="name">【ポイント20倍】 ヘアゴム CuteSet...</p>
+                            <p class="price">￥550</p>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/kimetu-putitzab-open/">
+                        <p class="newTag">NEW</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/08701150/imgrc0132233436.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <p class="newDate">01月10日新着</p>
+                        <div class="textArea">
+                            <p class="name">【3個で送料無料】★単品で選べる14種！鬼滅...</p>
+                            <p class="price">￥100</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!--/.outer-->
+
+        </div>
+        <!-- /.contents -->
+
+    </div>
+    <!-- /.container -->
+    
+    <script>
+        /*
+        ユーザーエージェントによる判別、スマホの場合id spを付与、タブレット、PCはid pcを付与
+        iframeで配置する場合、メディアクエリのみだとiframeの幅で判断してしまう為
+        PCで幅が小さい場合にもスマホ表示になるのを防ぐために入れている処理になります。
+        */
+        $(function() {
+            var ua = navigator.userAgent;
+            if ((ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) && ua.indexOf('Mobile') > 0) {
+                // スマホ処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'sp');
+            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+                // タブレット用処理(今回はPCと同じ処理)
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+
+            } else {
+                // PC用処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+            }
+        })
+
+        /*
+        grid専用
+        .tileの左右margin設定 .display** のクラス名で判定し処理
+        */
+        $(function() {
+
+            //ランダム配置
+            var input = '';
+            var randomBox = [];
+            
+            if(input == 'on'){
+               
+                $('.tile').each(function() {
+                    randomBox.push($(this).html());
+                });
+
+                randomBox.sort(function() {
+                    return Math.random() - Math.random();
+                });
+
+                $('.tile').empty();
+
+                i = 0;
+                $('.tile').each(function() {
+                    $(this).append(randomBox[i]);
+                    i++;
+                });
+               
+            }
+
+            if($('.contents').hasClass('grid01')){
+
+                //idにpcが付与されていた場合の処理
+                if ($('.contents').attr('id') == 'pc') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/display[0-9]+/);
+                    var rep2 = rep[0].replace("display", "");
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+                } else if ($('.contents').attr('id') == 'sp') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/sp_display[0-9]+(_center)?/);
+                    var rep2 = rep[0].replace("sp_display", "");
+                    var rep3 = rep2.replace("_center","");            
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+                }                
+            }
+
+            if($('.contents').hasClass('grid02')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+
+                    if ($(this).index() == 1 ||$(this).index() == 4 || (($(this).index() - 4) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+            }
+
+            if($('.contents').hasClass('grid03')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+                    if($(this).index() == 2 ){
+                        $(this).addClass('third');
+                    }
+
+                    if ($(this).index() == 2 || $(this).index() == 6 || (($(this).index() - 6) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+            }
+
+        })
+
+
+        /*
+        .newTagのテキスト入れ替え
+        new専用
+        */
+
+        $(function() {
+            if ($('.contents').hasClass('new01_S') ||
+                $('.contents').hasClass('new01_M') ||
+                $('.contents').hasClass('new01_L')) {
+                $('.newTag').text('NEW');
+            } else if ($('.contents').hasClass('new02_S') ||
+                       $('.contents').hasClass('new02_M') ||
+                       $('.contents').hasClass('new02_L')) {
+                $('.newTag').text('New arrival');
+            }
+        });
+
+    </script>
+
+<style>
+body{overflow-y:hidden;}
+</style>
+
+</body>
+
+</html>
+
+<!--Copyright c Inte-Crece Co.,Ltd. ecstation All Rights Reserved. 本HTMLテンプレート(カメレオン)の無断利用、盗用を禁じます。ECステーション契約者に利用が許可されたものです。2022年02月14日(月) 10:14:12-->

@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+#calender {
+	width: 170px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/title_bg_calender.jpg) no-repeat;
+	padding-top: 31px;
+    margin-top: 10px;
+}
+
+#calender .cal {
+	padding: 3px;
+	background: #ffe597;
+    border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+}
+
+#calender .cal table {
+	padding: 0;
+	width:170px;
+	padding: 3px;
+}
+
+#calender .cal table caption {
+	color: #f07f2c;
+	font-weight: bold;
+	padding: 5px 0 0 0;
+}
+
+#calender td {
+	color: #b8874c;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #fff0c1;
+	text-align: center;
+	padding: 3px 0;
+}
+
+#calender td .holiday {
+	background-color: #fb995e;
+	color: #fff;
+}
+
+#calender th {
+	color: #d37137;
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom: 1px solid #fff0c1;
+	text-align: center;
+}
+
+#note01 #txt_body {
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/left_b/box01_body.gif) repeat-y;
+	padding: 5px 10px;
+	color: #954012;
+	font-size: 12px;
+	letter-spacing: 2.0px;
+	line-height: 18px;
+}

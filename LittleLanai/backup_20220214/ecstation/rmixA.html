@@ -1,0 +1,845 @@
+<!--Powerd by ECステーション（カメレオンテンプレート）-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="shift_jis">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>grid_name_in</title>
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./simple_slider01_common.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <!-- css タイプ別 -->
+    <link rel="stylesheet" href="./new.css">
+
+    <!-- script -->
+    <script src="./jquery.js"></script>
+
+    <!-- 拡張用style -->
+    <style>
+        /* --- title用　ここから --- */
+
+        .titleArea {
+            /* タイトル箇所表示(flex)、非表示(none!important) */
+            display: flex;
+            /* タイトル下の間隔広さ */
+            margin-bottom: 10px;
+        }
+
+        .titleText {
+            /* タイトル文字色 */
+            color: #555;
+            /* タイトルテキストサイズ */
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: normal;
+        }
+
+        #sp .titleText{
+            /* タイトルテキストサイズ */
+            font-size: 18px;
+            line-height: calc(18px + 1px);
+            font-weight: normal;
+        }
+
+        .updateDate {
+            /* 更新日表示(block)、非表示(none) */
+            display: block;
+            /* 更新日文字色 */
+            color: #555;
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: 11px;
+            font-weight: normal;
+        }
+
+        #sp .updateDate {
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: calc(11px + 1px);
+            font-weight: normal;
+        }
+
+        .titleBack02 .titleArea {
+            /* 背景オン時の背景色 */
+            background-color: #ececec;
+            /* テキスト上下の間隔広さ */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea,
+        .titleBack04 .titleArea {
+            /* テキスト下の間隔広さ */
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea {
+            /* 罫線設定 */
+            border-bottom: 1px solid #999;
+        }
+
+        .titleBack04 .titleArea:before {
+            /* 罫線設定 */
+            border-bottom: 13px solid #ffd9e2;
+        }
+
+        /* --- title用　ここまで --- */
+
+        /* --- hover時の効果　ここから --- */
+
+        .contents#pc a:hover img {
+            /* 拡大サイズ デフォルト scale(1.3) オフ scale(1) */
+            transform: scale(1.3);
+        }
+
+        /* --- hover時の効果　ここまで --- */
+
+        /* --- 個別設定 --- */
+
+        .imgWrapper{
+            border: 0px solid #efefef;
+	    box-sizing: border-box;
+        }
+
+        .imgWrapper img{
+            margin-top: -0px;
+            margin-left: -0px;
+        }
+
+        #pc .name_in .textArea{
+            display: !important;
+            background: rgba(85, 85, 85, 0.6);
+        }
+
+        .name_in .textArea .name{
+            color: #fff;
+            font-weight: normal;
+        }
+
+        #sp .name_in .textArea .name{
+            display: !important;
+            max-height: unset;
+            font-size: !important;
+            font-weight: normal;
+        }
+
+        .new01_S .newTag,
+        .new01_M .newTag,
+        .new01_L .newTag {
+            left: 0;
+            background: #C7243A;
+            color: #fff;
+        }
+
+        .new02_S .newTag,
+        .new02_M .newTag,
+        .new02_L .newTag {
+            background: #ababab;
+            color: #fff;
+        }
+
+        #pc .newTag{
+            font-size: !important;
+            font-weight: normal;
+        }
+
+        #sp .newTag{
+            font-size: !important;
+            font-weight: normal;
+        }
+
+        #pc .newDate.pcOnly{
+            display: block;
+            font-size: !important;
+            font-weight: normal;
+            color: #C7243A;
+        }
+
+        #sp .newDate.spOnly{
+            display: block;
+            font-size: !important;
+            font-weight: normal;
+            color: #C7243A;
+        }
+
+        /* --- 個別設定　ここまで --- */
+
+        /* --- .tile01 お気に入り追加ボタン 追加カスタム分 --- */
+
+        /* .tile01 */
+
+        .tile01 .tile {
+            background: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border: 0px solid #ddd;
+        }
+
+        .contents#pc.tile01 a img {
+            transform: scale(0.9);
+            border-radius: 10px;
+        }
+
+        .contents#sp.tile01 a img {
+            transform: scale(0.9);
+            border-radius: 10px;
+        }
+
+        .contents#pc.tile01 a:hover img {
+            /* 拡大サイズ デフォルト scale(1.1) オフ scale(1) */
+            transform: scale(1.1);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="contents titleBack01 titlePattern circle grid01  new01_S display05 sp_display03 tile00">
+            <div class="titleArea">
+                <p class="titleText"></p>
+                <p class="updateDate">更新：2022年02月14日(月) 10:14:12</p>
+            </div>
+
+            <div class="outer">
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/206-293/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/4534253262930.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月26日新着</p>
+                                <p class="name">にょろにょろくねくねくん｜</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月26日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/cl-3931/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/kemppi.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月26日新着</p>
+                                <p class="name">【ポイント20倍最終日】 ウォールクロック ...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月26日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002729/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/chimmypasscase01.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月23日新着</p>
+                                <p class="name">BT21 パスケース CHIMMY｜</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月23日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/george_suyasuya/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/george_suyasuya01.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月23日新着</p>
+                                <p class="name">Curious George すやすやジョージ</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月23日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002728/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/imgrc0132445741.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月16日新着</p>
+                                <p class="name">【1月下旬発売予約受付中】東京リベンジャーズ...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月16日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/heapin-pfg033-2201/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/heapin-pfg033-1.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月14日新着</p>
+                                <p class="name">【ポイント20倍】 ヘアピン Cute Se...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月14日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/heapin-pfg045-2201/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/heapin-pfg045-1.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月14日新着</p>
+                                <p class="name">【ポイント20倍】 ヘアピン Cute Se...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月14日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hairtie-chs012-2201/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/hairtie-chs012-1.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月14日新着</p>
+                                <p class="name">【ポイント20倍】 ヘアゴム CuteSet...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月14日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hairtie-chs015-2201/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/hair-accessory/hairtie-chs015-1.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月14日新着</p>
+                                <p class="name">【ポイント20倍】 ヘアゴム CuteSet...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月14日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="name_in tile">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/kimetu-putitzab-open/">
+                        <div class="wrapper">
+                            <p class="newTag">NEW</p>
+                            <div class="imgWrapper">
+                                <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/08701150/imgrc0132233436.jpg?fitin=1000:1000" alt="">
+                            </div>
+                            <div class="textArea">
+                                <p class="newDate spOnly">01月10日新着</p>
+                                <p class="name">【3個で送料無料】★単品で選べる14種！鬼滅...</p>
+                            </div>
+                        </div>
+                        <p class="newDate pcOnly">01月10日新着</p>
+                    </a>
+                    <div class="favorite_button">
+                        <a>
+                            <span class="favorite_icon01">お気入りに追加</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.outer-->
+
+        </div>
+        <!-- /.contents -->
+
+    </div>
+    <!-- /.container -->
+    
+    <script>
+        /*
+        ユーザーエージェントによる判別、スマホの場合id spを付与、タブレット、PCはid pcを付与
+        iframeで配置する場合、メディアクエリのみだとiframeの幅で判断してしまう為
+        PCで幅が小さい場合にもスマホ表示になるのを防ぐために入れている処理になります。
+        */
+        $(function() {
+            var ua = navigator.userAgent;
+            if ((ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) && ua.indexOf('Mobile') > 0) {
+                // スマホ処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'sp');
+            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+                // タブレット用処理(今回はPCと同じ処理)
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+
+            } else {
+                // PC用処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+            }
+        })
+
+        /*
+        マウスオーバー時のスライド停止＆テキストエリア挙動設定
+        */
+        $(function() {
+            //idにpcが付与されていた場合の処理
+            if ($('.contents').attr('id') == 'pc') {
+                $('.tile')
+                    .on('mouseover', function() {
+                    $(this).find('.textArea').stop().fadeIn();
+                })
+                    .on('mouseout', function() {
+                    $(this).find('.textArea').stop().fadeOut();
+                });
+
+            }
+
+        });
+
+        /*
+        grid専用
+        .tileの左右margin設定 .display** のクラス名で判定し処理
+        */
+        $(function() {
+
+            //ランダム配置
+            var input = '';
+            var randomBox = [];
+            
+            if(input == 'on'){
+               
+                $('.tile').each(function() {
+                    randomBox.push($(this).html());
+                });
+
+                randomBox.sort(function() {
+                    return Math.random() - Math.random();
+                });
+
+                $('.tile').empty();
+
+                i = 0;
+                $('.tile').each(function() {
+                    $(this).append(randomBox[i]);
+                    i++;
+                });
+               
+            }
+
+            if($('.contents').hasClass('grid01')){
+
+                //idにpcが付与されていた場合の処理
+                if ($('.contents').attr('id') == 'pc') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/display[0-9]+/);
+                    var rep2 = rep[0].replace("display", "");
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+				// .tile01用
+
+				if ($('.tile01').length) {
+					$(window).on('load resize', function () {
+
+						var window_width = $(window).outerWidth();
+
+						$('.tile').css({
+							'margin-left': '5px',
+							'margin-right': '5px',
+							'width': (Math.floor(window_width / num) - 10) + 'px'
+						})
+
+						//画像のみ表示の時に正方形表示になるよう調整
+
+						var tile_w = $('.tile').width();
+						var tile_diff = $('.tile').height() - tile_w;
+
+						if ($('.name_in').length && $('.favorite_button').css('display') == 'none' && ($('.newDate.pcOnly').css('display') == 'none' || !$('.newDate.pcOnly').length) && !$('.rankNum').length) {
+
+							$('.tile').height(tile_w);
+							$('.textArea').css('bottom', tile_diff);
+
+						} else if ($('.name_in_price_out').length && $('.favorite_button').css('display') == 'none' && ($('.newDate.pcOnly').css('display') == 'none' || !$('.newDate.pcOnly').length) && !$('.rankNum').length && $('.textOutside .price').css('display') == 'none') {
+
+							$('.tile').height(tile_w);
+							$('.textInside').css('bottom', tile_diff);
+
+						} else if ($('.all_out').length && $('.favorite_button').css('display') == 'none' && ($('.newDate.pcOnly').css('display') == 'none' || !$('.newDate.pcOnly').length) && !$('.rankNum').length && $('.textArea .price').css('display') == 'none' && $('.textArea .name').css('display') == 'none') {
+
+							$('.tile').height(tile_w);
+
+						}
+
+					})
+				}
+
+                } else if ($('.contents').attr('id') == 'sp') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/sp_display[0-9]+(_center)?/);
+                    var rep2 = rep[0].replace("sp_display", "");
+                    var rep3 = rep2.replace("_center","");
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+				// .tile01用
+
+				if ($('.tile01').length) {
+					$(window).on('load resize', function () {
+
+						var window_width = $(window).outerWidth();
+
+						$('.tile').css({
+							'margin-left': '5px',
+							'margin-right': '5px',
+							'width': (Math.floor(window_width / num) - 10) + 'px'
+						})
+
+					})
+
+				}
+
+                }
+
+			// .tile01用 画像位置調整
+
+			if ($('.tile01').length) {
+				$(window).on('load resize', function () {
+
+					var tile_w = $('.tile').width();
+					var img_w = $('.imgWrapper').width();
+					var math = (img_w - tile_w) / 2;
+
+					$('.tile img').css('margin-left', -math);
+					$('.tile img').css('margin-top', -math);
+
+				})
+
+			}
+            }
+
+            if($('.contents').hasClass('grid02')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+
+                    if ($(this).index() == 1 ||$(this).index() == 4 || (($(this).index() - 4) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+			// .tile01用
+
+			if ($('.tile01').length) {
+				$(window).on('load resize', function () {
+
+					var window_width = $(window).outerWidth();
+
+					$('.tile').css({
+						'margin-left': '5px',
+						'margin-right': '5px',
+						'width': (Math.floor(window_width / 3) - 10) + 'px'
+					})
+
+					$('.tile.first,.tile.second').css({
+						'width': (Math.floor(window_width / 2) - 10) + 'px'
+					})
+
+				})
+
+			}
+            }
+
+            if($('.contents').hasClass('grid03')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+                    if($(this).index() == 2 ){
+                        $(this).addClass('third');
+                    }
+
+                    if ($(this).index() == 2 || $(this).index() == 6 || (($(this).index() - 6) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+			// .tile01用
+
+			if ($('.tile01').length) {
+				$(window).on('load resize', function () {
+
+					var window_width = $(window).outerWidth();
+
+					$('.tile').css({
+						'margin-left': '5px',
+						'margin-right': '5px',
+						'width': (Math.floor(window_width / 4) - 10) + 'px'
+					})
+
+					$('.tile.first,.tile.second,.tile.third').css({
+						'width': (Math.floor(window_width / 3) - 10) + 'px'
+					})
+
+				})
+
+			}
+            }
+
+        })
+
+		        /*
+        .newTagのテキスト入れ替え
+        new専用
+        */
+
+        $(function() {
+            if ($('.contents').hasClass('new01_S') ||
+                $('.contents').hasClass('new01_M') ||
+                $('.contents').hasClass('new01_L')) {
+                $('.newTag').text('NEW');
+            } else if ($('.contents').hasClass('new02_S') ||
+                       $('.contents').hasClass('new02_M') ||
+                       $('.contents').hasClass('new02_L')) {
+                $('.newTag').text('New arrival');
+            }
+        });
+
+    </script>
+
+<!-- タイル用設定・お気に入りボタン設定 -->
+<script>
+	$(window).on('load resize', function () {
+		if ($('.tile01').length) {
+
+			//all_out もしくは sp時 一番高い高さに合わせる
+			if ($('.all_out').length || $('.contents').attr('id') == 'sp') {
+				var max_height = 0;
+				$('.textArea,.textInside').each(function () {
+					if ($(this).height() > max_height) {
+						max_height = $(this).height();
+					}
+
+				})
+
+				$('.textArea,.textInside').height(max_height);
+			}
+
+			//new用 タグある側のradius解除
+			if ($('.newTag').length) {
+
+				if ($('.newTag').css('left') == '0px') {
+					$('.tile').css('border-radius', '0 10px 10px 10px');
+				} else if ($('.newTag').css('right') == '0px') {
+					$('.tile').css('border-radius', '10px 0 10px 10px');
+				}
+			}
+
+		}
+
+		//お気に入りボタン 拡張タグ用
+		// if ($('#pc').length) {
+		// 	$('.favorite_button span').removeClass()
+		// 		.addClass('favorite_icon<*{お気に入りボタンアイコン_PC（非表示：空欄、ハート[標準]：01、チェック：02、星：03、丸：04）}*>')
+		// 		.text('<*{お気に入りボタンテキスト_PC}*>');
+		// } else if ($('#sp').length) {
+		// 	$('.favorite_button span').removeClass()
+		// 		.addClass('favorite_icon<*{お気に入りボタンアイコン_スマホ（非表示：空欄、ハート[標準]：01、チェック：02、星：03、丸：04）}*>')
+		// 		.text('<*{お気に入りボタンテキスト_スマホ}*>');
+		// }
+	})
+
+</script>
+
+</body>
+
+</html>
+
+<!--Copyright c Inte-Crece Co.,Ltd. ecstation All Rights Reserved. 本HTMLテンプレート(カメレオン)の無断利用、盗用を禁じます。ECステーション契約者に利用が許可されたものです。2022年02月14日(月) 10:14:12-->

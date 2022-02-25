@@ -1,0 +1,503 @@
+.area-pt {
+padding-top: 50px !important;
+}
+.area-headline-title {
+font-size: 28px;
+}
+.area-headline-date {
+font-size: 16px;
+margin-top: 40px;
+}
+
+
+.area-covid {
+margin-top: 50px;
+}
+.area-covid-title {
+font-size: 28px;
+color: #20b87b;
+font-weight: bold;
+text-align: center;
+}
+.area-covid-text {
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin-top: 15px;
+}
+.area-covid-symptom {
+background-color: #f0faf6;
+padding: 35px 50px;
+margin-top: 25px;
+}
+.area-covid-item {
+font-size: 18px;
+font-weight: bold;
+padding-left: 30px;
+position: relative;
+}
+.area-covid-item::before {
+content:'●';
+font-size: 18px;
+color: #20b87b;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+}
+.area-covid-codicil {
+font-size: 18px;
+font-weight: bold;
+margin-top: 40px;
+}
+
+
+.area-contact {
+padding-bottom: 50px;
+margin-top: 80px;
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-contact-bg.png') no-repeat;
+}
+.area-contact-headline {
+padding: 70px 50px 60px 310px;
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-contact-human.png') left 100px bottom no-repeat;
+}
+.area-contact-title {
+font-size: 32px;
+font-weight: bold;
+}
+.area-contact-text {
+font-size: 16px;
+margin: 10px 0;
+}
+.area-contact-marker {
+font-size: 22px;
+font-weight: bold;
+color: #20b87b;
+background: linear-gradient(transparent 60%, #ffeb7a 60%);
+}
+.area-contact-form {
+background-color: #fff;
+padding: 40px 50px;
+margin: auto 50px;
+display: flex;
+justify-content: space-between;
+position: relative;
+}
+.area-contact-form::before {
+content: '';
+position: absolute;
+right: 0;
+bottom: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 30px 30px;
+border-color: transparent transparent #20b87b transparent;
+}
+.area-contact-form-1 {
+width: calc(65% - 10px);
+}
+.area-contact-form-2 {
+width: calc(35% - 10px);
+}
+.area-contact-tel {
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-tel.png') left 35px center no-repeat #f3db75;
+border: 3px solid #000;
+padding: 20px 50px 20px 100px;
+box-sizing: border-box;
+display: block;
+border-radius: 100px;
+}
+.area-contact-tel-codicil {
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin-top: 5px;
+}
+.area-contact-tel-number {
+font-size: 48px;
+font-weight: bold;
+line-height: 1;
+white-space: nowrap;
+}
+.area-contact-tel-time {
+font-size: 14px;
+font-weight: bold;
+line-height: 1.4;
+margin-top: 2px;
+}
+.area-contact-mail {
+display: block;
+border: 2px solid #20b87b;
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-mail.png') left 25px center no-repeat #fff;
+font-size: 19px;
+font-weight: bold;
+color: #20b87b;
+padding: 20px 25px 20px 90px;
+box-sizing: border-box;
+white-space: nowrap;
+border-radius: 10px;
+}
+.area-contact-line {
+display: block;
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-line.png') left 25px center no-repeat #20b87b;
+font-size: 19px;
+font-weight: bold;
+color: #fff;
+padding: 20px 25px 20px 90px;
+white-space: nowrap;
+border-radius: 10px;
+margin-top: 15px;
+}
+.area-contact-time {
+margin: 50px 50px auto;
+}
+.area-contact-table {
+width: 100%;
+}
+.area-contact-table th,
+.area-contact-table td {
+width: 25%;
+height: 80px;
+vertical-align: middle;
+box-sizing: border-box;
+font-size: 16px;
+border-collapse: collapse;
+border: 1px solid #ebeaec;
+}
+.area-contact-table th {
+background-color: #20b87b;
+color: #fff;
+}
+.area-contact-table td {
+text-align: center;
+background-color: #fff;
+}
+.area-contact-table th span {
+display: block;
+font-size: 12px;
+}
+
+
+.area-check {
+background-color: #f0faf6;
+padding: 50px;
+margin-top: 80px;
+}
+.area-check-title {
+font-size: 24px;
+font-weight: bold;
+color: #20b87b;
+}
+.area-check-item {
+font-size: 18px;
+font-weight: bold;
+padding-left: 30px;
+margin-top: 20px;
+position: relative;
+}
+.area-check-item:first-child {
+margin-top: 50px;
+}
+.area-check-item::before {
+content: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-check.png');
+position: absolute;
+left: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+}
+
+
+.area-title-large {
+padding: 20px 50px;
+font-size: 24px;
+font-weight: bold;
+background-color: #20b87b;
+color: #fff;
+}
+.area-night-support {
+margin-top: 80px;
+}
+.area-night-support-text {
+font-size: 16px;
+margin: 50px;
+}
+.area-title-medium {
+font-size: 24px;
+font-weight: bold;
+color: #20b87b;
+border-left: solid 4px #20b87b;
+padding-left: 15px;
+line-height: 1.5;
+}
+.area-night-support-text-station {
+font-size: 18px;
+margin: 50px 50px auto;
+}
+.area-night-support-place-list {
+margin: auto 50px;
+}
+.area-night-support-place-item {
+border: 1px solid #20b87b;
+margin-top: 80px;
+}
+.area-night-support-box {
+margin: 50px;
+}
+.area-night-support-hospital {
+display: flex;
+justify-content: space-between;
+}
+.area-night-support-img {
+margin-right: 50px;
+}
+.area-night-support-info-item {
+font-size: 16px;
+padding-left: 30px;
+position: relative;
+margin-top: 5px;
+}
+.area-night-support-info-item:first-child {
+margin-top: 0;
+}
+.area-night-support-info-item::before {
+content:'●';
+font-size: 16px;
+color: #20b87b;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+}
+.area-night-support-tag-list {
+display: flex;
+margin-top: 15px;
+}
+.area-night-support-tag-item {
+background-color: #20b87b;
+color: #fff;
+font-size: 16px;
+padding: 5px 15px;
+margin-right: 10px;
+}
+.area-night-support-text-time {
+font-size: 16px;
+margin: 20px auto 5px;
+}
+.area-night-support-time-table {
+width: 100%;
+}
+.area-night-support-time-table th,
+.area-night-support-time-table td {
+border-collapse: collapse;
+border: 1px solid #e6e6e6;
+padding: 15px;
+font-size: 16px;
+}
+.area-night-support-time-table th {
+background-color: #f0faf6;
+font-weight: normal;
+}
+.area-night-support-time-table td {
+background-color: #fff;
+text-align: center;
+}
+.area-night-support-form {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.area-night-support-tel {
+display: block;
+background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-tel-common.png') left 25px center no-repeat #20b87b;
+font-size: 22px;
+font-weight: bold;
+color: #fff;
+padding: 20px 35px 20px 90px;
+min-width: 300px;
+box-sizing: border-box;
+white-space: nowrap;
+border-radius: 5px;
+margin-right: 50px;
+}
+.area-night-support-detail {
+display: block;
+border: 1px solid #20b87b;
+font-size: 19px;
+color: #20b87b;
+padding: 20px 0;
+min-width: 300px;
+box-sizing: border-box;
+text-align: center;
+white-space: nowrap;
+border-radius: 5px;
+position: relative;
+}
+.area-night-support-detail img {
+position: absolute;
+right: -40px;
+top: 0;
+bottom: 0;
+margin: auto;
+max-width: 75px;
+}
+
+
+.area-night-support-subject {
+margin-top: 80px;
+}
+.area-night-support-subject-text {
+padding: 50px;
+background-color: #f0faf6;
+font-size: 16px;
+}
+.area-title-large span {
+color: #ffeb7a;
+}
+.area-aid {
+margin-top: 80px;
+}
+.area-aid-box {
+padding: 50px;
+background-color: #f0faf6;
+}
+.area-aid-title {
+font-size: 20px;
+font-weight: bold;
+}
+.area-aid-flex {
+display: flex;
+margin-top: 20px;
+}
+.area-aid-item {
+font-size: 16px;
+padding-left: 30px;
+position: relative;
+margin-top: 5px;
+}
+.area-aid-item:first-child {
+margin-top: 0;
+}
+.area-aid-item::before {
+content:'●';
+font-size: 16px;
+color: #20b87b;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+}
+.area-title-marker-wrap {
+text-align: center;
+margin-top: 80px;
+}
+.area-title-marker {
+color: #20b87b;
+font-size: 30px;
+background: linear-gradient(transparent 60%, #ffeb7a 60%);
+display: inline-block;
+}
+.area-holiday {
+margin-top: 50px;
+}
+.area-holiday-medical {
+margin-top: 80px;
+}
+.area-holiday-medical-box {
+margin: 50px;
+}
+.area-holiday-medial-title {
+font-size: 20px;
+}
+.area-holiday-medial-text {
+margin-top: 20px;
+}
+.area-holiday-medical-item {
+font-size: 16px;
+padding-left: 30px;
+position: relative;
+margin-top: 20px;
+list-style: none;
+}
+.area-holiday-medical-item::before {
+content:'';
+position: absolute;
+top: 0;
+left: 0;
+width: 22px;
+height: 22px;
+background-color: #20b87b;
+border-radius: 50%;
+}
+.area-holiday-medical-item::after {
+content: '';
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+position: absolute;
+top: -1px;
+left: 7px;
+}
+.area-holiday-medical-item:nth-child(1)::after {
+content: '1';
+}
+.area-holiday-medical-item:nth-child(2)::after {
+content: '2';
+}
+.area-holiday-medical-item:nth-child(3)::after {
+content: '3';
+}
+.area-holiday-medical-counseling-list {
+margin-top: 30px;
+}
+.area-holiday-medical-counseling-dt {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+.area-holiday-medical-counseling-dd {
+font-size: 16px;
+}
+.area-holiday-medical-counseling-flex {
+display: flex;
+}
+.area-holiday-medical-counseling-flex .area-holiday-medical-counseling-list:first-child {
+margin-right: 50px;
+}
+.area-menu-list {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 80px;
+}
+.area-menu-item {
+width: calc(100% / 3 - 13px);
+font-size: 20px;
+background-color: #20b87b;
+color: #fff;
+display: flex;
+align-items: center;
+border-radius: 10px;
+padding: 25px 25px 25px 30px;
+box-sizing: border-box;
+}
+.area-menu-item:nth-last-child(-n + 3) {
+margin-top: 20px;
+}
+.area-menu-text {
+line-height: 1.2;
+font-weight: bold;
+margin-left: 15px;
+}
+
+
+
+
+.area-contact-tel {
+    background: url('https://iekuru-dr.com/wp-content/uploads/2021/12/area-tel.png') top 15px center no-repeat #f3db75;
+    padding: 80px 20px 20px;
+}

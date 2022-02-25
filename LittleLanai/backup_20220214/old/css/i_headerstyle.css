@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+li,ul,ol,br,a,img,h1,h2,h3,h4,h5,p,iframe,form,input {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+    color: #6c3412;
+}
+
+a:hover {
+	text-decoration: none;
+        color: #e13500;
+}
+
+br {
+	line-height: 0;
+	letter-spacing: 0;
+}
+
+.clear {
+	clear:both;
+}
+
+.w_900 {
+	width: 900px;
+}
+
+.h_60 {
+	height: 60px;
+}
+
+.h_180 {
+	height: 180px;
+}
+
+.fs_10 {
+	font-size: 10px!important;
+}
+
+.fc_bio {
+	color: #75439b;
+}
+
+.left {
+	float:left;
+}
+.right {
+	float: right;
+}
+
+.clear {
+	clear:both:
+}
+
+
+.pt_5 {
+	padding-top: 5px;
+}
+
+.pl_10 {
+	padding-left: 10px;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+
+.pt_15 {
+	padding-top: 15px;
+}
+
+.pr_10 {
+	padding-right: 10px;
+}
+
+.mt_5 {
+	margin-top: 5px;
+}
+
+.ml_15 {
+	margin-left: 15px;
+}
+
+
+.title_h3 {
+	height: 30px;
+	padding-left: 15px;
+}
+
+.fc_fff {
+	color: #FFF;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	color: #50504f;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0;
+}
+
+#header {
+	width: 900px;
+	height: 192px;
+}
+
+#header a {
+	display:block;
+}
+
+#contents {
+        width: 900px;
+}
+
+
+
+/********************** Header Navi **********************/
+
+#topnavi {
+	width: 900px;
+	height: 25px;
+	margin-top: 3px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/topnavi_bg.gif) no-repeat;
+}
+
+
+#search_box {
+	width: 285px;
+	height: 25px;
+	padding-left: 15px;
+}
+
+#search_box form {
+	height: 16px;
+	padding-top: 4px;
+}
+
+#search_box form input{
+	height: 16px;
+	background:#ffd56f;
+	border: none;
+	color: #9f3f19;
+}
+
+
+#topnavi ul {
+	width: 600px;
+	height: 25px;
+}
+
+#topnavi ul li {
+	padding-right: 18px;
+	list-style:none;
+}
+
+#topnavi ul li a:hover img {
+	opacity:0.6;
+	filter: alpha(opacity=60);
+}
+
+
+
+
+
+
+
+

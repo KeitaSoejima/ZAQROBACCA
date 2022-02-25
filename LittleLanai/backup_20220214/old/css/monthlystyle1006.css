@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+.1006monthly_cont {
+	width: 710px;
+}
+
+
+#item_randambox {
+	width: 900px;
+	height: 75px;
+}
+
+#item_randambox a {
+	width: 75px;
+	height: 75px;
+}
+
+#m1006_table01 .m1006_item_box a:hover {
+	opacity:0.6;
+	filter: alpha(opacity=60);
+}
+
+.m1006_item_txt {
+	vertical-align:top;
+}
+
+#m1006_table01 .m1006_item_txt {
+	width: 202px;
+	padding: 5px 10px;
+	border: 1px solid #8ae2ef;
+}
+
+#m1006_table01 h5 {
+	color:#c7fcff;
+	line-height: 1.2;
+}
+
+.price_1006m {
+	text-align:right;
+	vertical-align:bottom;
+}
+
+#m1006_table01 h5 span {
+	color:#ffbfc5;
+	letter-spacing: 2px;
+}
+
+#m1006_table01 .m1006_item_txt a {
+	display:block;
+	color: #6f3b07;
+}
+
+#m1006_table01 .m1006_item_txt a:hover h5 {
+	color:#e1d956;
+}
+
+#m1006_table01 .m1006_item_txt p {
+	color:#453114;
+	font-size: 10px;
+	letter-spacing: 2px;
+	line-height: 1.6;
+}
+
+#m1006_table01 .m1006_item_txt a:hover p {
+	color:#565327;
+}
+
+

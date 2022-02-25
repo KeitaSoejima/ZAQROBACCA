@@ -1,0 +1,720 @@
+@charset "utf-8";
+/* CSS Document */
+
+li,ul,ol,br,a,img,h1,h2,h3,h4,h5,p,table,tr,th,td,input,form {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.fs_10 {
+	font-size: 10px;
+}
+
+
+
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+
+.w900 {
+	width: 900px;
+}
+
+
+
+/************************* Padding *************************/
+
+.pl_5 {
+	padding-left: 5px;
+}
+
+.pl_10 {
+	padding-left: 10px;
+}
+
+.pl_14 {
+	padding-left: 14px;
+}
+
+.pl_15 {
+	padding-left: 15px;
+}
+
+.pr_10 {
+	padding-right: 10px;
+}
+
+.pr_14 {
+	padding-right: 14px;
+}
+
+
+.pb_10 {
+	padding-bottom: 10px;
+}
+
+.pb_15 {
+	padding-bottom: 15px;
+}
+
+.pt_5 {
+	padding-top: 5px;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+
+.pt_15 {
+	padding-top: 15px;
+}
+
+
+
+
+/************************* Margin *************************/
+
+.ml_5 {
+	margin-left: 5px;
+}
+
+.ml_15 {
+	margin-left: 15px;
+}
+
+.mt_5 {
+	margin-top: 5px;
+}
+
+.mt_10 {
+	margin-top: 10px;
+}
+
+.mt_15 {
+	margin-top: 15px;
+}
+
+.mt_20 {
+	margin-top: 20px;
+}
+
+.mb_15 {
+	margin-bottom: 15px;
+}
+
+
+
+
+/************************* Font *************************/
+
+.fs_10 {
+	font-size: 10px!important;
+}
+
+.fc_fff {
+	color: #FFF;
+}
+
+.fc_red {
+	color: #D86527;
+}
+
+.fc_04 {
+	color:#5a8106;
+}
+
+
+
+
+/************************* Border *************************/
+
+.b_bot01 {
+	border-bottom: 1px solid #d4c5d6;
+}
+
+
+
+
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	color: #50504f;
+}
+
+
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	height: 100%;
+	padding-bottom: 25px;
+}
+
+
+
+/********************** Contents **********************/
+
+.pushcat01 table td a:hover img {
+	opacity:0.6;
+	filter: alpha(opacity=60);
+}
+
+
+
+/********************** New Line Up corner **********************/
+
+#c_new_table {
+	width: 520px;
+	border: 1px solid #d4c5d6;
+	border-bottom: none;
+	border-top: none;
+}
+
+#c_new_table td {
+	text-align:center;
+	width: 92px;
+}
+
+#c_new_table td a {
+	color: #6e6e6e;
+}
+
+#c_new_table td a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);
+}
+
+.c_new_img {
+	padding: 5px 5px 5px 5px;
+}
+
+.c_new_txt {
+	font-size: 10px;
+	padding: 0 5px 5px 5px;
+	line-height: 14px;
+	letter-spacing: 1.2px;
+}
+
+.c_new_txt a:hover p {
+	color: #81b7c4;
+}
+
+
+
+
+
+/********************** Ranking corner **********************/
+
+#c_rank_table {
+	width: 170px;
+	border: 1px solid #d4c5d6;
+	border-top: none;
+}
+
+#c_rank_table td {
+	text-align: center;
+	padding: 3px 0;
+}
+
+#c_rank_table td a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);
+}
+
+
+
+
+
+/********************** Information corner **********************/
+
+#information h3 {
+	width: 900px;
+}
+
+#information table {
+	border: 1px solid #d4c5d6;
+	border-top: none;
+}
+
+#information td {
+	vertical-align:top;
+	padding-bottom: 10px;
+}
+
+#information h4 {
+	width: 280px;
+	height: 45px;
+	margin-top: 10px;
+	padding-top: 11px;
+	background:url(../img/footer/titlebg_h1.gif) no-repeat;
+	font-size: 14px;
+	font-weight:bold;
+	color:#90441f;
+	text-align:center;
+}
+
+#information h4 p {
+	text-align:right;
+	padding-top: 10px;
+}
+
+#information h5 {
+	width: 266px;
+	height: 15px;
+	margin: 10px 5px 0 0;
+	padding: 3px 0 0 5px;
+	border-bottom: 3px dotted #ffc39f;
+	border-left: 7px solid #ffc39f;
+	font-size: 12px;
+	font-weight:bold;
+	color:#90441f;
+}
+
+
+#information p {
+	width: 270px;
+	padding: 5px;
+	font-size: 10px;
+	color:#804c33;
+	letter-spacing: 1.8px;
+	line-height: 18px;
+}
+
+#information table a {
+	color:#BA4721;
+	font-weight:bolder;
+}
+
+#information table a:hover {
+	color:#F07320;
+}
+
+
+
+
+#s_information h3 {
+	width: 710px;
+}
+
+#s_information table {
+	border: 1px solid #d4c5d6;
+	border-top: none;
+}
+
+#s_information td {
+	vertical-align:top;
+	padding-bottom: 15px;
+}
+
+#s_information h4 {
+	width: 340px;
+	height: 24px;
+	margin: 10px 0 5px 0;
+	padding-top: 11px;
+	background:url(../img/footer/1206h4_bg02.gif) no-repeat;
+	font-size: 14px;
+	font-weight:bold;
+	color:#846688;
+	text-align:center;
+	letter-spacing: 2px;
+}
+
+#s_information .info_detail {
+	text-align:right;
+	padding-top: 10px;
+	font-weight:bold;
+	color:#756577;
+}
+
+#s_information h5 {
+	height: 15px;
+	margin: 10px 10px 0 10px;
+	padding: 3px 0 0 7px;
+	border-bottom: 3px dotted #cef9fa;
+	border-left: 7px solid #cef9fa;
+	font-size: 12px;
+	font-weight:bold;
+	letter-spacing: 2px;
+	color:#8e4c0c;
+}
+
+
+#s_information p {
+	padding: 5px 10px 0 15px;
+	font-size: 10px;
+	color:#525252;
+	letter-spacing: 1.8px;
+	line-height: 18px;
+}
+
+#s_information table a {
+	color:#c04eca;
+	font-weight:bolder;
+}
+
+#s_information table a:hover {
+	color:#ffa163;
+}
+
+#camp_box {
+	background-color: #ffd6ec;
+	padding: 10px;
+	margin: 10px 10px 25px 10px;
+	font-size: 12px;
+	color:#b62f6b;
+	letter-spacing: 2.4px;
+	line-height: 22px;
+	border: 3px dotted #fff;
+	text-align: center;
+}
+
+#camp_box h6 {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color:#b01c5e;
+	letter-spacing: 1.8px;
+	font-weight:bold;
+	border-bottom: 2px dashed #e688b2;
+}
+
+
+
+
+
+/********************** Footer **********************/
+
+/*#footer ul {
+	width: 380px;
+	margin: 0 auto;
+	padding: 20px 0 0;
+}
+
+#footer ul li {
+	height: 12px;
+	display:block;
+	list-style: none;
+	border-left: 1px solid #755226;
+	padding: 0 15px;
+}
+
+#footer ul #home {
+	border:none;
+}
+
+#footer ul li a {
+	color:#745A4B;
+}
+
+#footer ul li a:hover {
+	color:#A6673E;
+}
+
+#footer p {
+	padding-top: 5px;
+	font-size: 10px;
+	color: #7C7256;
+	letter-spacing: 1.8px;
+}*/
+
+
+
+
+
+/******************************************** Information Page ********************************************/
+
+#info_p {
+	width: 700px;
+	text-align: left;
+}
+
+#info_p_top {
+	width: 669px;
+	height: 32px;
+	background:url(../img/information/1206bg_top.gif) no-repeat;
+	padding: 10px 0 0 31px;
+}
+
+#info_p_top h4 {
+	font-size:: 16px;
+	font-weight: bold;
+	color:#8e6894;
+	letter-spacing: 6px;
+}
+
+#info_p_body {
+	width: 580px;
+	background:url(../img/information/1206bg_body.gif) repeat-y;
+	padding: 10px 60px 10px 60px;
+}
+
+#info_p_body p {
+	line-height: 20px;
+	letter-spacing: 1.8px;
+}
+
+#info_p_body p span {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#com_info_left {
+	width: 300px;
+}
+
+#com_info_right {
+	width: 240px;
+	padding-left: 40px;
+}
+
+.txt_table01 {
+	margin: 10px;
+	padding: 10px 15px!important;
+	background: #f7f0f8;
+	letter-spacing: 2.0px;
+	line-height: 22px;
+}
+
+.txt_table02 {
+	padding: 10px 15px;
+	background: #fffae0;
+	letter-spacing: 2.0px;
+	line-height: 22px;
+	color:#973c65;
+}
+
+.txt_table03 {
+	background: #ffeee0;
+	color:#604B31;
+	letter-spacing: 2.0px;
+	line-height: 22px;
+}
+
+#info_p_body #oshiharai_t th {
+	padding: 5px 0 3px 5px;
+	border-left: 20px solid #dbc7e1;
+	border-bottom: 2px solid #dbc7e1;
+	text-align:left;
+	font-size: 14px;
+	color:#b676c0;
+}
+
+#info_p_body #oshiharai_t td {
+	padding: 5px 10px 5px 15px;
+}
+
+#info_p_body #soryo_t th {
+	padding: 15px 0 3px 5px;
+	border-bottom: 2px dotted #CEA37B;
+	text-align:left;
+	font-size: 14px;
+	color:#774622;
+}
+
+#info_p_body #soryo_t td {
+	padding: 5px 0 0 15px;
+}
+
+#info_p_body #soryo_t td span {
+	font-size: 12px;
+}
+
+#info_p_body #zei_t td {
+	padding: 5px;
+}
+
+#info_p_body #henpin_t th {
+	padding: 15px 0 3px 5px;
+	border-bottom: 2px dotted #CEA37B;
+	text-align:left;
+	font-size: 12px;
+	color:#774622;
+}
+
+#info_p_body #henpin_t td {
+	letter-spacing: 2.0px;
+	line-height: 22px;
+}
+
+#info_p_body a {
+	color:#5092A3;
+	text-decoration:underline;
+}
+
+#info_p_body a:hover {
+	color:#5B4F95;
+}
+
+#info_p_bottom {
+	width: 700px;
+	height: 20px;
+	background:url(../img/information/1206bg_bot.gif) no-repeat;
+}
+
+.fc_01 {
+	color:#654185;
+}
+
+.fc_02 {
+	color:#CD2C95;
+}
+
+.fc_03 {
+	color:#e34413;
+}
+
+
+
+/****************************************** 年末年始　お知らせ ***************************************************************/
+
+#oshirase10_11_top {
+	background: url(../img/banner/header/1101_oshirase_top.jpg) no-repeat bottom;
+	height: 40px;
+}
+
+#oshirase10_11 {
+	background: url(http://www.rakuten.ne.jp/gold/little-lanai/img/banner/header/1101_oshirase_body.jpg) no-repeat right bottom #533d28;
+	padding: 5px 100px 0 15px;
+	font-size: 12px;
+	color: #fbe5bb;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+/******************** 連休 ************************/
+#head_renqtxt {
+	background: #ffe7af;
+	margin-top: 5px;
+	border: 5px solid #bc76d9;
+	padding: 10px 25px 5px 25px;
+	color:#853b77;
+	width: 840px;
+}
+
+#head_renqtxt h6 {
+	margin: 0;
+	padding: 0;
+	color:#fa528a;
+	font-size:16px;
+	padding-bottom: 3px;
+	font-weight:bold;
+	letter-spacing:4.0px;
+}
+
+#head_renqtxt p {
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+	padding-bottom: 3px;
+	letter-spacing:4.0px;
+	line-height: 20px;
+}
+
+#head_renqtxt p span.fc_pink {
+	color: #c020dd;
+}
+
+#head_renqtxt .fw_b {
+	font-weight: bold;
+}
+
+
+/****************************************** ヘッダー部分　臨時　お知らせ ***************************************************************/
+
+#head_oshirasetxt {
+	margin: 10px 0;
+	background: #dcdcdc;
+	width: 860px;
+	padding: 10px 20px;
+}
+
+#head_oshirasetxt h6 {
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	font-size:18px;
+	text-align: center;
+	border-bottom: 2px solid #FFF;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+
+#head_oshirasetxt p {
+	letter-spacing:1.6px;
+	font-size:15px;
+}
+
+#head_oshirasetxt p span {
+	color: #fd5c8d;
+	font-weight: normal;
+}
+
+#head_oshirasetxt .fw_b {
+	font-weight: bold;
+	color: #8b4e21;
+}
+
+
+/********************* アルファベットマグ　プレゼント *********************/
+
+#catcont2 {
+	border: 5px solid #85bbc8;
+	padding: 25px;
+}
+#catcont2 h1.blue-line {
+	padding: 5px 25px;
+	border-bottom: 5px solid #85bbc8;
+	font-size: 2em;
+	text-align: center;
+	color: #7c6552;
+}
+#catcont2 p.cautiontxt {
+	background: #ff7920;
+	padding: 15px 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 1.3em;
+}
+.mt15 {
+	margin-top: 15px;
+}
+#catcont2 ul.listbox1 {
+	padding: 10px;
+	list-style: inside;
+	border-bottom: 3px dotted #85bbc8;
+}
+#catcont2 ul li {
+	margin-top: 10px;
+	padding: 5px 10px;
+	list-style: inside disc;
+	padding-left: 0px;
+}
+.imgbox01 {
+	padding: 10px;
+	margin: 20px 14px;
+	text-align: center;
+	border: 2px solid #d0cccb;
+}

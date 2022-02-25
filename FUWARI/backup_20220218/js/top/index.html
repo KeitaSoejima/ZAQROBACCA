@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title></title>
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.js"></script>
+<script type="text/javascript" src="cloud-carousel.1.0.3.js"></script>
+<script type="text/javascript">
+$(function(){
+  	$("#carousel1").CloudCarousel({
+  			xPos: 370,
+  			yPos: 50,
+  			bringToFront:true,
+  			buttonLeft: $("#left"),
+  			buttonRight: $("#right"),
+  			altBox: $("#alt"),
+  			titleBox: $("#title"),
+  			mouseWheel:true,
+  			autoRotate:true,
+  			autoRotateDelay:3000
+  	});
+});
+</script>
+
+
+<style type="text/css">
+<!--
+img{border:0px; border:solid 1px #cccccc;}
+body{font-size:14px; color:#333333; font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+-->
+</style>
+
+</head>
+
+<body>
+
+
+<div id="carousel1" style="width:750px; height:320px;overflow:scroll;">       
+
+	<a href="https://item.rakuten.co.jp/fuwari/c/0000000179/" target="_top"><img class="cloudcarousel" src="img/032.jpg" width="200" title="男性用はんてん 半纏" /></a>
+	<a href="https://item.rakuten.co.jp/fuwari/10000017/" target="_top"><img class="cloudcarousel" src="img/031.jpg" width="200" title="冬用フリース作務衣" /></a>
+	<a href="https://item.rakuten.co.jp/fuwari/originallonhanten4/" target="_top"><img class="cloudcarousel" src="img/033.jpg" width="200" title="打ち合わせ長半纏" /></a>
+	<a href="https://item.rakuten.co.jp/fuwari/10000510/" target="_top"><img class="cloudcarousel" src="img/036.jpg" width="200" title="猫柄はんてん"></a>
+	<a href="https://search.rakuten.co.jp/search/inshop-mall/%E7%A7%8B%E3%80%80%E4%BD%9C%E5%8B%99%E8%A1%A3/-/sid.215800-st.A?x=0" target="_top"><img class="cloudcarousel" src="img/002samue-aki.jpg" width="200" title="秋用 作務衣" /></a>
+	<a href="https://item.rakuten.co.jp/fuwari/c/0000000182/" target="_top"><img class="cloudcarousel" src="img/008sodenasi.jpg" width="200" title="袖なし半天" /></a>
+	<a href="https://item.rakuten.co.jp/fuwari/giemon37/" target="_top"><img class="cloudcarousel" src="img/035.jpg" width="200" title="半纏 男性用 送料無料" /></a>
+
+</div>
+
+<div style="width:750px;text-align:center;">       
+<span id="title"></span>
+
+</div>
+
+<!--<p id="left">左へ</p><p id="right">右へ</p>-->
+
+
+
+</div>
+
+
+
+</body>
+</html>

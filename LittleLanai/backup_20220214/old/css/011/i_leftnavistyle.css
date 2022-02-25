@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3,img,a,p,br,table,th,td,ul,li {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.75;
+}
+
+img {
+	border: none;
+}
+
+.mt_5 {
+	margin-top: 5px;
+}
+
+.mt_10 {
+	margin-top: 10px;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+
+.pb_5 {
+	padding-bottom: 5px;
+}
+
+.title_h3 {
+	height: 25px;
+	width: 170px;
+	background: url(../../../img/left_b/11/bg_title.gif) no-repeat bottom;
+	font-size: 20px;
+	font-weight: bold;
+	color: #a9aa67;
+	text-shadow: 1px 1px 2px rgba(9,1,3,0.75);
+	text-align: center;
+}
+
+.fc_fff {
+	color: #FFF!important;
+}
+
+
+
+/********************** Banner corner **********************/
+
+.left_banner {
+	width: 170px;
+	padding-top: 5px;
+}
+
+.left_banner a {
+	display: block;
+	/*margin-bottom: 5px;*/
+}
+
+.lbanner_txt {
+	width: 150px;
+	padding: 0 10px;
+	margin-bottom: 5px;
+	font-size: 10px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	color:#703211;
+	text-align:center;
+}
+
+.lbanner_txt p a {
+	font-size: 10px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	color:#703211;
+	text-align:center;
+}
+
+.lbanner_txt p a:hover {
+	color: #9B5F31;
+}
+
+
+
+
+/********************** Category corner **********************/
+
+#c_category {
+	width: 170px;
+}
+
+#c_category .title_h3 {
+	height: 30px;
+	width: 170px;
+	padding: 0;
+}
+
+#c_category .title_h3 em {
+	display: none;
+}
+
+#c_category li {
+	width: 162px;
+	padding: 5px 0 5px 8px;
+	border-top: 1px solid #FFF;
+	background: #cc99d9;
+	list-style: none;
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+    border-radius: 3px;
+}
+
+#c_category li a {
+	width: 138px;
+	padding-left: 20px;
+	display:block;
+	color: #FFF;
+	background: url(../../img/left_b/2012/cat_icon3.gif) no-repeat 0 50%;
+}
+
+#c_category li a:hover {
+	color: #FFF;
+	background: url(../../img/left_b/2012/cat_icon3_on.gif) no-repeat 0 50%;
+}
+
+#c_category .cat02 {
+	width: 163px;
+	padding: 2px 0 2px 7px;
+	border-top: 1px solid #FFF;
+	background: #ffd9f7;
+	list-style: none;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+    border-radius: 3px;
+}
+
+#c_category .cat02 a {
+	width: 163px;
+	padding-left: 0;
+	display:block;
+	color: #525252;
+	background: url(../../img/left_b/2012/cat_icon4.gif) no-repeat 95% 50%;
+}
+
+#c_category .cat02 a:hover {
+	color: #525252;
+	background: url(../../img/left_b/2012/cat_icon4_on.gif) no-repeat 95% 50%;
+}
+
+
+/********************** Calender corner **********************/
+
+#calender {
+	width: 170px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/title_bg_calender.jpg) no-repeat;
+	padding-top: 31px;
+    margin-top: 10px;
+}
+
+#calender table {
+	padding: 3px;
+}
+
+#calender td {
+	color: #525252;
+	font-size: 12px;
+}
+
+#calender th {
+	color: #525252;
+        font-weight: bold;
+        font-size: 14px;
+}
+
+
+/********************** ご注意 **********************/
+
+#caution {
+	width: 150px;
+	background: #f7afdd;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#caution h3 {
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 3.0px;
+	padding-bottom: 5px;
+	color: #c264b8;
+}
+
+#caution p {
+	font-size: 12px;
+	letter-spacing: 2.4px;
+	line-height: 18px;
+	color: #525252;
+}
+

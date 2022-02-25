@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img,br {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#wrapper {
+	background: #eaeaea;
+	width: 690px;
+	padding-bottom: 3px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.pt_6 {
+	padding-top: 6px;
+}
+

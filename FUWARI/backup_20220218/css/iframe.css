@@ -1,0 +1,26 @@
+/*インラインフレームの高さ調整
+======================================*/
+
+/* 看板・ナビボタン */
+iframe.hl{
+	height:150px; /*←高さ*/
+	width:1100px;
+}
+
+/* 検索窓 */
+iframe.search{
+	height:160px; /*←高さ*/
+	width:330px;
+}
+
+/* レフトナビ */
+iframe.left{
+	height:6465px; /*←高さ*/
+	width:330px;
+}
+
+/* フッター */
+iframe.footer{
+	height:1120px; /*←高さ*/
+	width:1100px;
+}

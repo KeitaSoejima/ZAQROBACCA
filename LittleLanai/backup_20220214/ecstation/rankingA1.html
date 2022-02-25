@@ -1,0 +1,618 @@
+<!--Powerd by ECステーション（カメレオンテンプレート）-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="shift_jis">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>grid_name_in</title>
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./simple_slider01_common.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <!-- css タイプ別 -->
+    <link rel="stylesheet" href="./ranking.css">
+
+    <!-- iconfont -->
+    <link rel="stylesheet" href="./iconfont.css">
+
+    <!-- script -->
+    <script src="./jquery.js"></script>
+
+    <!-- 拡張用style -->
+    <style>
+        /* --- title用　ここから --- */
+
+        .titleArea {
+            /* タイトル箇所表示(flex)、非表示(none!important) */
+            display: flex;
+            /* タイトル下の間隔広さ */
+            margin-bottom: 10px;
+        }
+
+        .titleText {
+            /* タイトル文字色 */
+            color: #555;
+            /* タイトルテキストサイズ */
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: normal;
+        }
+
+        #sp .titleText{
+            /* タイトルテキストサイズ */
+            font-size: 18px;
+            line-height: calc(18px + 1px);
+            font-weight: normal;
+        }
+
+        .updateDate {
+            /* 更新日表示(block)、非表示(none) */
+            display: block;
+            /* 更新日文字色 */
+            color: #555;
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: 11px;
+            font-weight: normal;
+        }
+
+        #sp .updateDate {
+            /* 更新日テキストサイズ */
+            font-size: 11px;
+            line-height: calc(11px + 1px);
+            font-weight: normal;
+        }
+
+        .titleBack02 .titleArea {
+            /* 背景オン時の背景色 */
+            background-color: #ececec;
+            /* テキスト上下の間隔広さ */
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea,
+        .titleBack04 .titleArea {
+            /* テキスト下の間隔広さ */
+            padding-bottom: 10px;
+        }
+
+
+        .titleBack03 .titleArea {
+            /* 罫線設定 */
+            border-bottom: 1px solid #999;
+        }
+
+        .titleBack04 .titleArea:before {
+            /* 罫線設定 */
+            border-bottom: 13px solid #ffd9e2;
+        }
+
+        /* --- title用　ここまで --- */
+
+        /* --- hover時の効果　ここから --- */
+
+        .contents#pc a:hover img {
+            /* 拡大サイズ デフォルト scale(1.3) オフ scale(1) */
+            transform: scale(1.3);
+        }
+
+        /* --- hover時の効果　ここまで --- */
+
+        /* --- 個別設定 --- */
+
+        .imgWrapper{
+            border: 0px solid #efefef;
+	    box-sizing: border-box;
+        }
+
+        .imgWrapper img{
+            margin-top: -0px;
+            margin-left: -0px;
+        }
+
+        #pc .all_out .textArea .name {
+            display: block;
+            color: #555;
+            font-size: !important;
+            max-height: unset;
+            font-weight: normal;
+        }
+
+        #sp .all_out .textArea .name {
+            display: block;
+            color: #555;
+            font-size: !important;
+            max-height: unset;
+            font-weight: normal;
+        }
+
+        #pc .all_out .textArea .price {
+            display: block;
+            color: #ff0000;
+            font-size: !important;
+            font-weight: bold;
+        }
+
+        #sp .all_out .textArea .price {
+            display: block;
+            color: #ff0000;
+            font-size: !important;
+            font-weight: bold;
+        }
+
+        /* colorでカラー設定タイプ */
+        .contents .rankNum:after,
+        [class*="ranking_b09"].contents .rankNum {
+            color: ;
+        }
+
+        .rankNum.top:after,
+        [class*="ranking_b09"] .rankNum.top {
+            color: !important;
+        }
+
+        .rankNum.second:after,
+        [class*="ranking_b09"] .rankNum.second {
+            color: !important;
+        }
+
+        .rankNum.third:after,
+        [class*="ranking_b09"] .rankNum.third {
+            color: !important;
+        }
+
+
+        /* backgroundでカラー設定タイプ */
+        [class*="ranking_b01"].contents .rankNum:after,
+        [class*="ranking_b02"].contents .rankNum:after,
+        [class*="ranking_b08"].contents .rankNum,
+        [class*="ranking_c01"].contents .rankNum,
+        [class*="ranking_c02"].contents .rankNum{
+            background: ;
+        }
+
+        [class*="ranking_b01"] .rankNum.top:after,
+        [class*="ranking_b02"] .rankNum.top:after,
+        [class*="ranking_b08"] .rankNum.top,
+        [class*="ranking_c01"] .rankNum.top,
+        [class*="ranking_c02"] .rankNum.top{
+            background: !important;
+        }
+
+        [class*="ranking_b01"] .rankNum.second:after,
+        [class*="ranking_b02"] .rankNum.second:after,
+        [class*="ranking_b08"] .rankNum.second,
+        [class*="ranking_c01"] .rankNum.second,
+        [class*="ranking_c02"] .rankNum.second{
+            background: !important;
+        }
+
+        [class*="ranking_b01"] .rankNum.third:after,
+        [class*="ranking_b02"] .rankNum.third:after,
+        [class*="ranking_b08"] .rankNum.third,
+        [class*="ranking_c01"] .rankNum.third,
+        [class*="ranking_c02"] .rankNum.third {
+            background: !important;
+        }
+
+        .rankNum{
+            color: !important;
+            font-weight: bold!important;
+        }
+
+        #sp .rankNum{
+            font-weight: bold!important;
+        }
+
+        [class*="ranking_c01"] .rankNum{
+            left: 2px;
+        }
+
+        [class*="ranking_c02"] .rankNum{
+            left: 0;
+        }
+
+        /* --- 個別設定　ここまで --- */
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="contents titleBack01 titlePattern circle ranking_a01_S rankingColor01 grid02 display05 sp_display03">
+            <div class="titleArea">
+                <p class="titleText">Ranking</p>
+                <p class="updateDate">更新：2022年02月14日(月) 10:43:39</p>
+            </div>
+
+            <div class="outer">
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002490/">
+                        <p class="rankNum">1</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/outlet/imgrc0130664982.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">【アウトレットSALE】RW リセットローラ...</p>
+                            <p class="price">￥1,100</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10002491/">
+                        <p class="rankNum">2</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/outlet/imgrc0130664708.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">【アウトレットSALE】RW リセットバー ...</p>
+                            <p class="price">￥825</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10001847/">
+                        <p class="rankNum">3</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/outlet/imgrc0132247470.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">【30%OFF】 トイマシーン TOY MA...</p>
+                            <p class="price">￥300</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/toyblanket1911c/">
+                        <p class="rankNum">4</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/outlet/imgrc0132247472.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">【75%OFF】 トイマシーン TOY MA...</p>
+                            <p class="price">￥500</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/10001810/">
+                        <p class="rankNum">5</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/nici2-2002-2.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">ニキ NICI キーホルダー キーリング ラ...</p>
+                            <p class="price">￥1,012</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/initial-5939-6011/">
+                        <p class="rankNum">6</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/initial_top.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">ニキ NICI イニシャルプラッシュチャーム...</p>
+                            <p class="price">￥660</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/tmijoy1908/">
+                        <p class="rankNum">7</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/page-img/outlet/imgrc0132247476.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">トイマシーン TOY MACHINE  スマ...</p>
+                            <p class="price">￥600</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/kefii-cleanser/">
+                        <p class="rankNum">8</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/kefii_b.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">★TVで紹介されました！！ Kefii バブ...</p>
+                            <p class="price">￥1,595</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hy_kerorinoke/">
+                        <p class="rankNum">9</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/kerorinoke2002-1.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">ケロリン 湯桶 手桶 桶 銭湯 お風呂桶 深...</p>
+                            <p class="price">￥1,430</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="tile all_out">
+                    <a target="_top" href="https://item.rakuten.co.jp/little-lanai/hy_kerorincup/">
+                        <p class="rankNum">10</p>
+                        <div class="imgWrapper">
+                            <img src="https://tshop.r10s.jp/little-lanai/cabinet/ll_2020_0207_06.jpg?fitin=1000:1000" alt="">
+                        </div>
+                        <div class="textArea">
+                            <p class="name">ケロリン プラコップ コップ プラスチックマ...</p>
+                            <p class="price">￥495</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!--/.outer-->
+
+        </div>
+        <!-- /.contents -->
+
+    </div>
+    <!-- /.container -->
+    
+    <script>
+        /*
+        ユーザーエージェントによる判別、スマホの場合id spを付与、タブレット、PCはid pcを付与
+        iframeで配置する場合、メディアクエリのみだとiframeの幅で判断してしまう為
+        PCで幅が小さい場合にもスマホ表示になるのを防ぐために入れている処理になります。
+        */
+        $(function() {
+            var ua = navigator.userAgent;
+            if ((ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) && ua.indexOf('Mobile') > 0) {
+                // スマホ処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'sp');
+            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+                // タブレット用処理(今回はPCと同じ処理)
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+
+            } else {
+                // PC用処理
+                $('.contents').removeAttr('id');
+                $('.contents').attr('id', 'pc');
+            }
+        })
+
+        /*
+        grid専用
+        .tileの左右margin設定 .display** のクラス名で判定し処理
+        */
+        $(function() {
+
+            //ランダム配置
+            var input = '<*{ランダム表示（通常表示[標準]：空欄、ランダム表示：on）}*>';
+            var randomBox = [];
+            
+            if(input == 'on'){
+               
+                $('.tile').each(function() {
+                    randomBox.push($(this).html());
+                });
+
+                randomBox.sort(function() {
+                    return Math.random() - Math.random();
+                });
+
+                $('.tile').empty();
+
+                i = 0;
+                $('.tile').each(function() {
+                    $(this).append(randomBox[i]);
+                    i++;
+                });
+               
+            }
+
+            if($('.contents').hasClass('grid01')){
+
+                //idにpcが付与されていた場合の処理
+                if ($('.contents').attr('id') == 'pc') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/display[0-9]+/);
+                    var rep2 = rep[0].replace("display", "");
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+                } else if ($('.contents').attr('id') == 'sp') {
+
+                    var t = $('.contents').attr('class');
+                    var rep = t.match(/sp_display[0-9]+(_center)?/);
+                    var rep2 = rep[0].replace("sp_display", "");
+                    var rep3 = rep2.replace("_center","");            
+                    var num = Number(rep2);
+
+                    $(".tile").each(function(i) {
+                        if ((($(this).index() + 1) % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '5px'
+                            });
+
+                        } else if ($(this).index() == 0 || ($(this).index() % num) == 0) {
+
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '0'
+                            });
+
+                        } else {
+                            $(this).css({
+                                'margin-right': '5px',
+                                'margin-left': '5px'
+                            });
+                        }
+
+                        if(num == 1){
+                            $(this).css({
+                                'margin-right': '0',
+                                'margin-left': '0'
+                            });
+
+                        }
+                    });
+
+                }                
+            }
+
+            if($('.contents').hasClass('grid02')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+
+                    if ($(this).index() == 1 ||$(this).index() == 4 || (($(this).index() - 4) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 3) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+            }
+
+            if($('.contents').hasClass('grid03')){
+                $(".tile").each(function(i) {
+
+                    if($(this).index() == 0 ){
+                        $(this).addClass('first');
+                    }
+                    if($(this).index() == 1 ){
+                        $(this).addClass('second');
+                    }
+                    if($(this).index() == 2 ){
+                        $(this).addClass('third');
+                    }
+
+                    if ($(this).index() == 2 || $(this).index() == 6 || (($(this).index() - 6) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '0',
+                            'margin-left': '5px'
+                        });
+
+                    } else if ($(this).index() == 0 || (($(this).index() + 1) % 4) == 0) {
+
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '0'
+                        });
+
+                    } else {
+                        $(this).css({
+                            'margin-right': '5px',
+                            'margin-left': '5px'
+                        });
+                    }
+
+                });
+
+            }
+
+        })
+
+        /* ランキング1~3にそれぞれクラス名を付与 */
+
+        $(function() {
+            $('.rankNum').filter(function() {
+                return $(this).text() === "1";
+            }).addClass('top');
+            $('.rankNum').filter(function() {
+                return $(this).text() === "2";
+            }).addClass('second');
+            $('.rankNum').filter(function() {
+                return $(this).text() === "3";
+            }).addClass('third');
+
+        });
+    </script>
+
+<style>
+body{overflow-y:hidden;}
+</style>
+
+</body>
+
+</html>
+
+<!--Copyright c Inte-Crece Co.,Ltd. ecstation All Rights Reserved. 本HTMLテンプレート(カメレオン)の無断利用、盗用を禁じます。ECステーション契約者に利用が許可されたものです。2022年02月14日(月) 10:43:39-->

@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+<link rel="stylesheet" href="css/slick.css" type="text/css">
+<link rel="stylesheet" href="css/slider.css">
+
+<ul id="slider" class="slider">
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000136/" target="_blank">
+            <img src="https://shop.r10s.jp/fuwari/cabinet/i/imgrc0062857600.jpg" alt="#">
+        </a>
+    </li>
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000100/" target="_blank">
+            <img src="https://tshop.r10s.jp/fuwari/cabinet/i/sp_bnr04.jpg" alt="#">
+        </a>
+    </li>
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000102/" target="_blank">
+            <img src="https://tshop.r10s.jp/fuwari/cabinet/i/sp_bnr08.jpg" alt="#">
+        </a>
+    </li>
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000116/" target="_blank">
+            <img src="https://tshop.r10s.jp/fuwari/cabinet/i/sp_bnr09.jpg" alt="#">
+        </a>
+    </li>
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000124/" target="_blank">
+            <img src="https://tshop.r10s.jp/fuwari/cabinet/i/sp_bnr07.jpg" alt="#">
+        </a>
+    </li>
+    <li>
+        <a href="https://item.rakuten.co.jp/fuwari/c/0000000120/" target="_blank">
+            <img src="https://tshop.r10s.jp/fuwari/cabinet/i/sp_bnr11.jpg" alt="#">
+        </a>
+    </li>
+</ul>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/top/slick.min.js"></script>
+<script>
+    $(function() {
+      $('#slider').slick({
+        autoplay: true,
+        dots: true,
+        centerMode: true,
+        centerPadding: '50px',
+        arrows: true,
+        slidesToShow: 1,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    centerPadding: '30px',
+                    variableWidth: false,
+                    slidesToShow: 1,
+                }
+            }
+        ]
+      });
+    });
+</script>

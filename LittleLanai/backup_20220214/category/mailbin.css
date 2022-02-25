@@ -1,0 +1,89 @@
+/* CSS Document */
+
+body,li,ul,ol,br,a,img,h1,h2,h3,h4,h5,p,table,tr,th,td,input,form {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+.w_690 {
+	width: 690px;
+	margin: 0 auto;
+}
+
+body {
+	font: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	letter-spacing: 2.0px;
+	color: #52402c;
+	line-height: 24px;
+}
+
+.kuroneko {
+	margin-top: 1em;
+}
+.kuroneko h2 {
+	border-left: 15px solid #add020;
+	padding-left: 20px;
+	font-size: 1.8em;
+}
+
+#txt01 {
+	width: 628px;
+	margin: 10px 15px;
+	padding: 10px 15px;
+	border: 1px solid #add020;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.75);
+}
+
+#txt01 #txt01_txt {
+	width: 240px;
+	font-size: 14px;
+}
+
+#txt01_img {
+	width: 380px;
+}
+
+
+#txt02 {
+	padding: 10px 20px 5px 35px;
+}
+
+.hotxt {
+	color: #e52544;
+	font-size: 16px;
+	letter-spacing: 4.0px;
+	font-weight: bold;
+}
+
+#txt03 {
+	padding: 20px 20px 5px 35px;
+}
+
+.pt_30 {
+	padding-top: 30px;
+}
+

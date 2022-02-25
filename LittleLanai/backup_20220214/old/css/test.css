@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+#ozisan_sinagiretxt {
+	height: 100px;
+	width: 290px;
+	padding: 10px 80px 10px 20px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/ozisan_sinagire.gif) no-repeat right;
+	text-align:right;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#ozisan_toriyosetxt {
+	width: 195px;
+	height: 50px;
+	padding: 20px 0 25px 100px;
+	backgroundurl(http://www.rakuten.ne.jp/gold/little-lanai/img/ozisan_toriyose.gif) no-repeat left;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#tsurube {
+	width: 280px;
+	height: 110px;
+	padding: 10px 10px 10px 100px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/tsurube.gif) no-repeat;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#tken {
+	width: 200px;
+	height: 105px;
+	padding: 10px 10px 10px 100px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/tken.gif) no-repeat;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#ozisan04 {
+	width: 290px;
+	height: 110px;
+	padding: 10px 80px 10px 20px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/ozisan04.gif) no-repeat right;
+	text-align: right;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#item_detail {
+	width: 350px;
+	background: #ffae86;
+	margin-top: 3px;
+	padding: 15px;
+	text-align:right;
+	font-size: 12px;
+	color: #42240e;
+	line-height: 18px;
+	letter-spacing: 1.6px;
+	border: 1px dotted #edc937;
+    border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+}
+
+#item_maintxt {
+	background: #ffeda4;
+	width: 350px;
+	margin-top: 3px;
+	padding: 15px;
+	font-size: 12px;
+	color: #42240e;
+	line-height: 20px;
+	letter-spacing: 2.0px;
+	border: 1px dotted #d48cfd;
+    border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */
+}
+
+#item_addtxt {
+	background: #ff5454;
+	width: 346px;
+	margin-top: 3px;
+	padding: 8px 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #720505;
+	line-height: 24px;
+	letter-spacing: 2.0px;
+	border: dotted 2px #7609a4;
+}
+
+.asrak_bn {
+	padding: 5px 0 10px 0;
+}
+
+.item_info {
+	border: 3px dotted #ab2fac !important;
+	background-color: #faeaf3;
+	padding: 15px 20px;
+}
+
+.item_info p {
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	color: #573649;
+}
+
+
+/***** 商品　キャッチコピーとアイテム名 ******/
+span.catch_copy {
+	display: inline-block;
+	width: 360px;
+	padding: 10px;
+	font-size: 12px;
+	letter-spacing: 2.0px;
+	color: #883b07;
+}
+
+span.item_name {
+	display: inline-block;
+	width: 350px;
+	padding: 15px;
+	color: #8a6471;
+	font-size: 18px;
+	line-height: 22px;
+	border: 1px solid #e6e3d9;
+	border-radius: 3px;
+	box-shadow: 0 1px 5px rgba(166,158,123,0.75);
+	-webkit-box-shadow: 0 1px 5px rgba(166,158,123,0.75);
+}
+
+
+/***** 買い物カゴ *****/
+
+/* 個数入力欄 */
+iunput#units {
+	border: 1ps solid #a19272;
+	background: #f7f1c1 !important;
+	padding: 7px !important;
+	cursor: auto;
+	width: 30px;
+}
+
+/* 個数テキスト */
+.until {
+	vertical-align: middle;
+}
+
+/* 買い物ボタン */
+input {
+	background: #f8f7ee;
+	padding: 7px 10px;
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	color: #834808;
+	border-bottom: 2px solid #cac7b7;
+	border-right: 2px solid #d7d3bf;
+	margin-bottom: 10px;
+}
+
+input:hover {
+	background: #ffed82;
+	border-bottom: 2px solid #d4c464;
+	border-right: 2px solid #d4c464;
+}
+
+*html input {
+	overflow: visible;
+}
+
+
+.etc_link {
+	font-size: 12px !important;
+	letter-spacing: 60% !important;
+	color: #865230 !important;
+}
+
+
+
+/*--------------------　Category*カテゴリー　-------------------------*/
+
+#catcont {
+	width: 690px;
+}
+
+#catcont h1.orange {
+	padding: 5px 25px;
+	background: #ff7920;
+	border: 1px dashed white;
+	border-radius: 5px;
+	text-align: center;
+	color: #FFF;
+}
+
+#catcont .txtbox01 {
+	width: 580px;
+	border-bottom: 3px dotted #f5b25a;
+	padding: 20px 55px;
+}
+
+#catcont .txtbox01 p {
+	padding-top: 5px;
+	color: #564840;
+	letter-spacing: 1.6px;
+	line-height: 20px;
+}
+
+#catcont .txtbox01 p.fc_03 {
+	color:#e34413;
+}
+
+#catcont .imgbox01 {
+	width: 640px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+	border: 2px solid #d0cccb;
+}
+

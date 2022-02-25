@@ -1,0 +1,155 @@
+/* CSS Document */
+.txt-red { color: #ff6049; }
+
+/* -------------------- COMMON -------------------- */
+h3 {
+	border-bottom: 3px solid #312927;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 800;
+	font-family: "Arial Black";
+}
+
+.left-side { width: 190px; }
+
+
+/* -------------------- Left side -------------------- */
+.left-calender .message {
+	margin: 1.2em 0 1em;
+	padding: 1em;
+	border-radius: 5px;
+	background: #bce7e5;
+	position: relative;
+}
+.left-calender .message:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -15px;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #bce7e5;
+  border-left: 15px solid transparent;
+}
+.left-calender .message a {
+	color: #312927;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+
+/* -------------------- 商品ページ -------------------- */
+span.catch_copy {
+	font-size: 12px;
+	padding: 0 0 5px;
+	width: 430px;
+	box-sizing: border-box;
+	display: block;
+}
+span.item_name {
+	font-size: 20px;
+	font-weight: 800;
+	padding: 0 0 5px;
+	width: 430px;
+	box-sizing: border-box;
+	display: block;
+	border-bottom: 3px solid #312927;
+}
+#item_maintxt {
+	width: 430px;
+	box-sizing: border-box;
+	border-top: 3px solid #312927;
+	margin: 0;
+	padding: 10px;
+    line-height: 1.7;
+    letter-spacing: 1;}
+#item_detail {
+	width: 430px;
+	box-sizing: border-box;
+	border-top: 1px dashed#312927;
+	border-bottom: 3px solid #312927;
+	margin: 0;
+	padding: 10px;
+    line-height: 1.8;
+    letter-spacing: 1;
+}
+
+/* -------------------- 送料無料商品 -------------------- */
+.freeship02 {
+	width: 430px;
+	background: #ececec;
+}
+.freeship02-head {
+	background: #f8ff46;
+	margin: 0;
+	padding: 0.5em;
+	border-bottom: 1px solid #312927;
+	text-align: center;
+	font-size: 18px;
+	color: #323232;
+	font-weight: 800;
+}
+.freeship02-txt {
+	font-size: 14px;
+	margin: 0 0 10px;
+	padding: 10px 20px;
+}
+
+
+/* -------------------- 商品SPEC表 -------------------- */
+.itemtable001 {
+	margin-top: 1em;
+	width: 100%;
+	border: 1px solid #d1d1d1;
+	border-collapse: separate;
+	border-radius: 6px;
+	border-spacing: 0;
+	overflow: hidden;
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
+}
+.itemtable001 th {
+	width: 20%;
+	padding: .8em .8em;
+	white-space: nowrap;
+	background: #f7f7f7;
+	border-bottom: 1px solid #d1d1d1;
+	text-align: left;
+    font-weight: normal;
+    color: #686868;
+}
+.itemtable001 td {
+	padding: .8em .8em;
+	border-bottom: 1px solid #d1d1d1;
+}
+.itemtable001 tr:last-child th,
+.itemtable001 tr:last-child td {
+	border-bottom: none;
+}
+
+
+/* -------------------- POPUP -------------------- */
+body { position: relative; }
+.popup {
+	position: fixed;
+	z-index: 1;
+	top: 130px;
+	right: 5px;
+	width: 150px;
+	height: 100px;
+	background: #ff1b3b;
+	opacity: 0.85;
+	text-align: center;
+	border-radius: 80px 80px 80px 0;
+	padding: 50px 0 0 0;
+	border: 3px solid #FFF;
+}
+.popup a {
+	color: #FFF;
+	text-decoration: none;
+}
+.popup-bigtxt {
+	font-size: 25px;
+	font-weight: 800;
+}

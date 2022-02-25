@@ -1,0 +1,134 @@
+/* CSS Document */
+
+body,p,h1,h2,h3,h4,h5,h6,br,a,img,ul,li,ol,dl,dt,dd,input,table,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;
+	line-height: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover img {
+	opacity: 0.8;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.pt5 {
+	padding-top: 5px;
+}
+.pt10 {
+	padding-top: 10px;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+#commnbnr_wrap {
+	width: 710px;
+}
+
+
+/***-------------------- Ranking・Newitem --------------------***/
+.itemtable {
+	width: 100%;
+	margin-top: 1px;
+	border: 1px solid #d78db1;
+}
+
+.table02 td {
+	border-top: 1px solid #dfdfdf;
+}
+
+.itemtable .imgBox {
+	width: 120px;
+	height: 88px;
+}
+.itemtable .imgBox a {
+	width: 118px;
+	height: 118px;
+	display: block;
+	border: 1px solid #e3d0d9;
+	margin-top: 5px;
+}
+.itemtable .imgBox a img {
+	width: 118px;
+	height: 118px;
+}
+
+.itemtable .txtBox{
+	width: 120px;
+	height: 42px;
+}
+.itemtable .txtBox a {
+	display: block;
+	font-size: 12px;
+	color: #825f88;
+	margin: 3px 0;
+	line-height: 13px;
+	text-align: center;
+	vertical-align: central;
+}
+
+.itemtable .txtBox a:hover {
+	opacity: 1;
+	color: #52bdd0;
+}
+
+/***---------- 今月の送料無料 ----------***/
+#freeship .itemtable {
+	background: #fcec68;
+	border: 1px solid #ffd92a;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#freeship .itemtable td {
+	padding: 5px 0 10px;
+}
+
+#freeship .itemtable .imgBox a {
+	border: 1px solid #f4a75b;
+}
+
+/***---------- 送料無料まであとちょっと ----------***/
+#tuideni .itemtable {
+	background: #93d675;
+	border: 1px solid #78c257;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#tuideni .itemtable td {
+	padding: 5px 0 10px;
+}
+
+#tuideni .itemtable .imgBox a {
+	border: 1px solid #448b25;
+}

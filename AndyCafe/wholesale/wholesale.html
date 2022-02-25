@@ -1,0 +1,836 @@
+<style>
+  body {
+    font-family: 'Noto Sans Japanese','Helvetica Neue','Helvetica','Arial',"游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  }
+  header {
+    font-family: "BIZ UDGothic",sans-serif;
+  }
+  p {
+    color: #000;
+  }
+  .wholesale-visual {
+    margin-top: -60px;
+  }
+  @media(max-width: 599px) {
+    .wholesale-visual {
+      margin-top: unset;
+    }
+  }
+</style>
+<div class="wholesale-visual">
+  <img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-visual.jpg" alt="ドッグメニュー卸販売">
+</div>
+
+<style>
+  .whole-sale-production-wrap {
+    background: #f7f5ef;
+    background-image:
+    url('https://andycafe.com/wp-content/uploads/2021/12/service-environment-footprint_01.png'),
+    url('https://andycafe.com/wp-content/uploads/2021/12/service-environment-footprint_02.png'),
+    url('https://andycafe.com/wp-content/uploads/2021/12/service-environment-footprint_01.png');
+    background-repeat: no-repeat;
+    background-position: left 80px top 80px, right 80px top 480px, left 80px bottom 450px;
+    padding: 50px 0 100px;
+  }
+  .wholesale-production {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .wholesale-production-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .wholesale-production-title-img {
+    max-width: 121px;
+    margin-bottom: -3px;
+  }
+  .wholesale-production-title-baloon {
+    position: relative;
+    border: 3px solid #a12524;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 15px 35px 12px;
+  }
+  .wholesale-production-title-baloon::before {
+    content: '';
+    position: absolute;
+    border-top: 20px solid #a12524;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+  }
+  .wholesale-production-title-foot {
+    padding-left: 55px;
+    background: url('https://andycafe.com/wp-content/uploads/2022/01/wholesale-foot.png') left center/contain no-repeat;
+    font-size: 36px;
+    color: #a12524;
+    font-weight: bold;
+  }
+  .wholesale-production-title-main,
+  .wholesale-production-title-sub {
+    font-weight: bold;
+    color: #a12524;
+  }
+  .wholesale-production-title-main {
+    font-size: 48px;
+    margin: 25px 0 20px;
+  }
+  .wholesale-production-title-sub {
+    font-size: 32px;
+  }
+  .wholesale-production-text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 90px 20px;
+  }
+  .wholesale-production-text:last-of-type {
+    margin-bottom: 0;
+  }
+  .wholesale-hotel {
+    max-width: 1080px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px -5px #777;
+    padding: 100px 60px 60px;
+    margin-top: 100px;
+  }
+  .wholesale-common-title {
+    text-align: center;
+  }
+  .wholesale-common-title-baloon {
+    position: relative;
+    background-color: #a12524;
+    border: 3px solid #a12524;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 15px 35px 12px;
+  }
+  .wholesale-common-title-baloon::before {
+    content: '';
+    position: absolute;
+    border-top: 20px solid #a12524;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+  }
+  .wholesale-common-title-foot {
+    padding-left: 55px;
+    background: url('https://andycafe.com/wp-content/uploads/2022/01/wholesale-common-title-foot.png') left center/contain no-repeat;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .wholesale-common-title-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a12524;
+    margin: 30px 0 20px;
+  }
+  .wholesale-common-title-sub {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .wholesale-hotel-title {
+    position: relative;
+  }
+  .wholesale-hotel-title-img-1, .wholesale-hotel-title-img-2 {
+    position: absolute;
+  }
+  .wholesale-hotel-title-img-1 {
+    bottom: 0;
+    right: 60px;
+  }
+  .wholesale-hotel-title-img-2 {
+    top: 0;
+    left: 60px;
+  }
+  .wholesale-hotel-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .wholesale-hotel-list p:last-of-type {
+    display: none;
+  }
+  .wholesale-hotel-item {
+    width: calc(100% / 3 - 30px);
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px -5px #777;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  .wholesale-hotel-img {
+    text-align: center;
+  }
+  .wholesale-hotel-title-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a12524;
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .wholesale-hotel-title-sub {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a12524;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
+  .wholesale-hotel-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+  @media(max-width: 599px) {
+    .whole-sale-production-wrap {
+      background-image: unset;
+      padding: 50px 0 0;
+    }
+    .wholesale-production-title {
+      margin-bottom: 40px;
+    }
+    .wholesale-production-title-baloon {
+      margin: 0 20px;
+      padding: 0 30px;
+    }
+    .wholesale-production-title-foot {
+      font-size: 24px;
+      text-align: left;
+      background: url('https://andycafe.com/wp-content/uploads/2022/01/wholesale-foot.png') left center/40px no-repeat;
+      padding: 15px 0 15px 55px;
+    }
+    .wholesale-production-title-main {
+      font-size: 36px;
+      margin: 25px 20px 20px;
+    }
+    .wholesale-production-title-sub {
+      margin: 0 20px;
+    }
+    .wholesale-production-text {
+      font-size: 16px;
+      margin: 0 20px 20px;
+    }
+    .wholesale-production-text p:last-of-type {
+      margin-bottom: unset;
+    }
+    .wholesale-common-title-foot {
+      font-size: 24px;
+      text-align: left;
+      background: url('https://andycafe.com/wp-content/uploads/2022/01/wholesale-common-title-foot.png') left center/40px no-repeat;
+    }
+    .wholesale-hotel {
+      padding: 40px 0 20px;
+      margin-top: 40px;
+      border-radius: unset;
+      box-shadow: unset;
+    }
+    .wholesale-hotel-title-img-1, .wholesale-hotel-title-img-2 {
+      display: none;
+    }
+    .wholesale-hotel-list {
+      overflow-x: auto;
+      padding: 40px 20px 20px;
+      margin-top: unset;
+    }
+    .wholesale-hotel-item {
+      width: 55%;
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+    .wholesale-hotel-item:last-of-type {
+      margin-right: unset;
+    }
+  }
+</style>
+<div class="whole-sale-production-wrap">
+  <div class="wholesale-production">
+    <div class="wholesale-production-title">
+      <p><img class="wholesale-production-title-img" src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-dog.png" alt="ドッグメニュー卸販売"></p>
+      <div class="wholesale-production-title-baloon">
+        <p class="wholesale-production-title-foot">卸販売のご案内</p>
+      </div>
+      <h2 class="wholesale-production-title-main">AndyCafe DogMenu B to B</h2>
+      <p class="wholesale-production-title-sub">「安心安全でワンちゃんに幸せを」</p>
+    </div>
+    <p class="wholesale-production-text">無添加無着色、アレルギーにも配慮した安心安全のオリジナルドッグメニューをたくさんのワンちゃんにお届けしていただき、そしてたくさんの幸せを感じていただくため、全国の事業主様にご案内させていただきます。</p>
+    <p class="wholesale-production-text">ドッグカフェ、ペット同伴ＯＫの飲食店やホテル、ドッグサロンなどその他ドッグサービス施設などの事業主様に卸販売させていただいております。</p>
+    <p class="wholesale-production-text">ご検討されたい方、お取り引きされたい方は、下記お問い合わせフォームより必要事項をご記入いただきまして、送信ください。後程、資料をお送りさせていただきます。</p>
+  </div>
+
+  <div class="wholesale-hotel">
+    <div class="wholesale-common-title wholesale-hotel-title">
+      <div class="wholesale-common-title-baloon">
+        <p class="wholesale-common-title-foot">安心安全の商品の証</p>
+      </div>
+      <h2 class="wholesale-common-title-main">各店舗様、ホテル様でもお取り扱い頂いております。</h2>
+      <p class="wholesale-common-title-sub">（下記は一部ご紹介させていただいております。）</p>
+      <p class="wholesale-hotel-title-img-1"><img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-hotel.png" alt="ホテル"></p>
+      <p class="wholesale-hotel-title-img-2"><img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-kitchen.png" alt="キッチン"></p>
+    </div>
+    <div class="wholesale-hotel-list">
+      <div class="wholesale-hotel-item">
+        <p class="wholesale-hotel-img"><img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-hotel_01.png" alt="DOUTOR"></p>
+        <h3 class="wholesale-hotel-title-main">DOUTOR</h3>
+        <p class="wholesale-hotel-title-sub">ドトール</p>
+        <p class="wholesale-hotel-text">・イオンモール幕張新都心店<br>・土岐プレミアムアウトレット店<br>・アリオ上尾</p>
+      </div>
+      <div class="wholesale-hotel-item">
+        <p class="wholesale-hotel-img"><img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-hotel_02.png" alt="WIRED KITCHEN"></p>
+        <h3 class="wholesale-hotel-title-main">WIRED KITCHEN</h3>
+        <p class="wholesale-hotel-title-sub">ワイアードキッチン</p>
+        <p class="wholesale-hotel-text">・南町田グランベリーパーク店</p>
+      </div>
+      <div class="wholesale-hotel-item">
+        <p class="wholesale-hotel-img"><img src="https://andycafe.com/wp-content/uploads/2022/01/wholesale-hotel_03.png" alt="MARRIOTT"></p>
+        <h3 class="wholesale-hotel-title-main">MARRIOTT</h3>
+        <p class="wholesale-hotel-title-sub">マリオット・ホテル</p>
+        <p class="wholesale-hotel-text">・東京マリオットホテル<br>・軽井沢マリオットホテル<br>・コートヤード・バイ・マリオット白馬</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wholesale-menu-wrap {
+    background-color: #eeeadb;
+    padding: 100px 0;
+  }
+  .wholesale-menu {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .wholesale-menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .wholesale-menu-list p:last-of-type {
+    display: none;
+  }
+  .wholesale-menu-item {
+    width: calc(25% - 25px);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .wholesale-menu-item:nth-child(-n + 4) {
+    margin-bottom: 35px;
+  }
+  .wholesale-menu-num {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+  .wholesale-menu-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 0 13px 50px;
+    margin-top: 15px;
+  }
+  .wholesale-menu-title-plate {
+    background: url('https://andycafe.com/wp-content/uploads/2022/01/wholesale-menu-plate.png') left center/42px no-repeat;
+  }
+  .wholesale-menu-link {
+    text-align: center;
+    margin-top: 50px;
+  }
+  @media(max-width: 599px) {
+    .wholesale-menu-wrap {
+      padding: 40px 0;
+    }
+    .wholesale-common-title {
+      margin: 0 20px;
+    }
+    .wholesale-menu-list {
+      overflow-x: auto;
+      flex-wrap: unset;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .wholesale-menu-item {
+      width: 60%;
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+    .wholesale-menu-item:nth-child(-n + 4) {
+      margin-bottom: unset;
+    }
+    .wholesale-menu-item:last-of-type {
+      margin-right: 0;
+    }
+    .wholesale-menu-num {
+      top: unset;
+      left: unset;
+    }
+    .wholesale-menu-link {
+      margin: 20px 20px 0;
+    }
+  }
+</style>
+<div class="wholesale-menu-wrap">
+  <div class="wholesale-menu">
+    <div class="wholesale-common-title">
+      <div class="wholesale-common-title-baloon">
+        <p class="wholesale-common-title-foot">人気のドッグメニュー</p>
+      </div>
+    </div>
+    <div class="wholesale-menu-list">
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_01.png" alt="menu_num_01">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_01.png" alt="menu_01">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">とりバーグプレート</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_02.png" alt="menu_num_02">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_02.png" alt="menu_02">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">うまボールプレート</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_03.png" alt="menu_num_03">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_03.png" alt="menu_03">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">ミートローフプレート</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_04.png" alt="menu_num_04">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_04.png" alt="menu_04">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">まぐろステーキプレート</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_05.png" alt="menu_num_05">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_05.png" alt="menu_05">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">miniデコ</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_06.png" alt="menu_num_06">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_06.png" alt="menu_06">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">おかずケーキ</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_07.png" alt="menu_num_07">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_07.png" alt="menu_07">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">バースデー苺のレアチーズケーキ</p>
+      </div>
+      <div class="wholesale-menu-item">
+        <p class="wholesale-menu-num">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_num_08.png" alt="menu_num_08">
+        </p>
+        <p class="wholesale-menu-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/menu_08.png" alt="menu_08">
+        </p>
+        <p class="wholesale-menu-title wholesale-menu-title-plate">フローラクッキー</p>
+      </div>
+    </div>
+    <p class="wholesale-menu-link">
+      <a href="https://andycafe.shop-pro.jp/">
+        <img src="https://andycafe.com/wp-content/uploads/2022/01/menu-link.png" alt="menu-link">
+      </a>
+    </p>
+  </div>
+</div>
+
+<style>
+  .wholesale-flow-wrap {
+    background-color: #f7f5ef;
+    padding: 100px 0;
+  }
+  .wholesale-flow {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .wholesale-flow-list {
+    margin-top: 60px;
+  }
+  .wholesale-flow-item {
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    padding: 35px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .wholesale-flow-item::before {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top: 20px solid #a12524;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    width: 0;
+  }
+  .wholesale-flow-item:last-of-type {
+    margin-bottom: unset;
+  }
+  .wholesale-flow-item:last-of-type::before {
+    display: none;
+  }
+  .wholesale-flow-flex {
+    margin-left: 35px;
+  }
+  .wholesale-flow-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a12524;
+    border-left: 6px solid #a12524;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+  .wholesale-flow-text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  @media(max-width: 599px) {
+    .wholesale-flow-wrap {
+      padding: 40px 0;
+    }
+    .wholesale-flow-list {
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .wholesale-flow-item {
+      display: block;
+      padding: 20px;
+    }
+    .wholesale-flow-flex {
+      margin-left: unset;
+      margin-top: 25px;
+    }
+    .wholesale-flow-img img {
+      width: 100%;
+    }
+    .wholesale-flow-title {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+<div class="wholesale-flow-wrap">
+  <div class="wholesale-flow">
+    <div class="wholesale-common-title">
+      <div class="wholesale-common-title-baloon">
+        <p class="wholesale-common-title-foot">配送からお届けまでの流れ</p>
+      </div>
+    </div>
+    <div class="wholesale-flow-list">
+      <div class="wholesale-flow-item">
+        <p class="wholesale-flow-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/flow_01.png" alt="製造後冷凍保存">
+        </p>
+        <div class="wholesale-flow-flex">
+          <h3 class="wholesale-flow-title">製造後冷凍保存</h3>
+          <p class="wholesale-flow-text">アンディカフェドッグキッチンで作られたドッグメニューは、<br>いったん冷凍保存されます。</p>
+        </div>
+      </div>
+      <div class="wholesale-flow-item">
+        <p class="wholesale-flow-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/flow_02.png" alt="冷凍のままクール便でお届け">
+        </p>
+        <div class="wholesale-flow-flex">
+          <h3 class="wholesale-flow-title">冷凍のままクール便でお届け</h3>
+          <p class="wholesale-flow-text">ケーキ類、お食事メニューは冷凍のままクール便で全国に配送されます。<br>最短で翌日配送、遠隔地で翌々日配送となります。</p>
+        </div>
+      </div>
+      <div class="wholesale-flow-item">
+        <p class="wholesale-flow-img">
+          <img src="https://andycafe.com/wp-content/uploads/2022/01/flow_03.png" alt="冷凍保存">
+        </p>
+        <div class="wholesale-flow-flex">
+          <h3 class="wholesale-flow-title">冷凍保存</h3>
+          <p class="wholesale-flow-text">冷凍保存で3ヶ月間は美味しくお召し上がりいただけます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wholesale-offer-wrap {
+    background-color: #eeeadb;
+    padding: 100px 0;
+  }
+  .wholesale-offer {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .wholesale-offer-list {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  .wholesale-offer-list p:last-of-type {
+    display: none;
+  }
+  .wholesale-offer-item {
+    background-color: #fff;
+    border-radius: 15px;
+    width: calc(50% - 25px);
+  }
+  .wholesale-offer-title-main {
+    background-color: #a12524;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px 15px 0 0;
+  }
+  .wholesale-offer-flex {
+    display: flex;
+    align-items: center;
+    margin: 35px;
+  }
+  .wholesale-offer-box {
+    margin-left: 20px;
+  }
+  .wholesale-offer-sub {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a12524;
+    border-left: 6px solid #a12524;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+  .wholesale-offer-text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .wholesale-offer-hr {
+    margin: 0 35px;
+    border: 1px solid #a12524;
+  }
+  @media(max-width: 599px) {
+    .wholesale-offer-wrap {
+      padding: 40px 0;
+    }
+    .wholesale-offer-list {
+      display: block;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .wholesale-offer-item {
+      width: unset;
+      margin-bottom: 20px;
+    }
+    .wholesale-offer-item:last-of-type {
+      margin-bottom: unset;
+    }
+    .wholesale-offer-flex {
+      margin: unset;
+      padding: 25px;
+    }
+  }
+</style>
+<div class="wholesale-offer-wrap">
+  <div class="wholesale-offer">
+    <div class="wholesale-common-title">
+      <div class="wholesale-common-title-baloon">
+        <p class="wholesale-common-title-foot">お客様への提供方法</p>
+      </div>
+    </div>
+    <div class="wholesale-offer-list">
+      <div class="wholesale-offer-item">
+        <h3 class="wholesale-offer-title-main">TAKEOUT</h3>
+        <div class="wholesale-offer-flex">
+          <p><img src="https://andycafe.com/wp-content/uploads/2022/01/offer_01.png" alt="テイクアウト"></p>
+          <div class="wholesale-offer-box">
+            <h4 class="wholesale-offer-sub">テイクアウト</h4>
+            <p class="wholesale-offer-text">冷凍のままお持ち帰りいただきます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="wholesale-offer-item">
+        <h3 class="wholesale-offer-title-main">店内提供</h3>
+        <div class="wholesale-offer-flex">
+          <p><img src="https://andycafe.com/wp-content/uploads/2022/01/offer_02.png" alt="冷凍お食事メニュー"></p>
+          <div class="wholesale-offer-box">
+            <h4 class="wholesale-offer-sub">冷凍お食事メニュー</h4>
+            <p class="wholesale-offer-text">電子レンジで解凍して、ご提供いただけます。※ケーキ類不可</p>
+          </div>
+        </div>
+        <hr class="wholesale-offer-hr">
+        <div class="wholesale-offer-flex">
+          <p><img src="https://andycafe.com/wp-content/uploads/2022/01/offer_03.png" alt="冷蔵ケーキ・冷凍お食事メニュー"></p>
+          <div class="wholesale-offer-box">
+            <h4 class="wholesale-offer-sub">冷蔵ケーキ・冷凍お食事メニュー</h4>
+            <p class="wholesale-offer-text">冷凍解凍して、ご提供いただけます。※冷蔵消費期限は3日間</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .service-contact-wrap {
+    background-color: #f7f5ef;
+    padding: 100px 0;
+  }
+  .service-contact {
+    max-width: 1080px;
+    margin: auto;
+  }
+  .service-contact-button {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .service-contact-button:last-of-type {
+    margin-bottom: unset;
+  }
+  .service-contact-form-table {
+    border-spacing: 0 40px;
+    margin: auto;
+    width: 100%;
+    padding: 0 60px;
+    margin-top: 40px;
+  }
+  .service-contact-form-table th {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    width: 50%;
+  }
+  .service-contact-form-table td {
+    width: 50%;
+  }
+  .service-contact-form-table .required:after {
+    content: '必須';
+    font-size: 1.8rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #a12524;
+    margin-left: 15px;
+  }
+  .service-contact-form-table-text-weak {
+    font-size: 18px;
+  }
+  .service-contact-form-table input[type="text"],
+  .service-contact-form-table input[type="email"] {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  .service-contact-form-table textarea {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 520px;
+    box-sizing: border-box;
+  }
+  .service-contact-form-table input[type="checkbox"] {
+    margin: 0 10px 0 0;
+  }
+  .service-contact-form-table span.wpcf7-list-item {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .service-contact-form-container {
+    margin-bottom: 150px;
+  }
+  .service-contact-form-container:last-of-type {
+    margin-bottom: unset;
+  }
+  .service-contact-form-submit-box {
+    text-align: center;
+  }
+  @media(max-width: 599px) {
+    .service-contact-wrap {
+      background-color: #f7f5ef;
+      padding: 40px 0;
+    }
+    .service-contact-form-table-submit-button {
+      width: 100%;
+    }
+    .service-contact-form-table {
+      padding: 0 15px;
+      margin-top: unset;
+    }
+    .service-contact-form-table th {
+      font-size: 18px;
+      padding-right: 15px;
+    }
+    .service-contact-form-table .required:after {
+      font-size: 1.1rem;
+      display: block;
+      margin: unset;
+      max-width: 60px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .service-contact-form-container {
+      margin-bottom: 100px;
+    }
+    .service-contact-form-submit-box {
+      padding: 0 15px;
+    }
+  }
+</style>
+<div class="service-contact-wrap">
+  <div class="service-contact" id="con-content">
+    <div class="service-contact-form-container">
+      <div class="wholesale-common-title wholesale-hotel-title">
+        <div class="wholesale-common-title-baloon">
+          <p class="wholesale-common-title-foot">お問い合わせフォーム</p>
+        </div>
+        <h2 class="wholesale-common-title-main">ドッグメニューをご検討の方、お取引されたい方</h2>
+        <p class="wholesale-common-title-sub">（後ほど、資料をお送りさせていただきます）</p>
+      </div>
+      <div class="service-contact-form-box" id="fcs">
+        [contact-form-7 id="13512" title="ドッグメニュー卸販売"]
+      </div>
+    </div>
+  </div>
+</div>

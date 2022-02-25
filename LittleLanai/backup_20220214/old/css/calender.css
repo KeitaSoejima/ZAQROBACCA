@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,a,img,ul,li,table,th,td,p {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#calender_body {
+	width: 170px;
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/title_bg_calender.jpg) no-repeat;
+	padding-top: 31px;
+    margin-top: 5px;
+	overflow: hidden;
+}
+
+#calender_body .jqueryCalendar {
+	width:164px;
+	padding: 3px;
+	background: #ffe597;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#calender_body .jqueryCalendar ul.navi {
+	padding: 5px 0;
+	width: 164px;
+	height: 16px;
+}
+
+#calender_body .jqueryCalendar ul.navi li {
+	list-style: none;
+	width: 16px;
+}
+
+#calender_body .jqueryCalendar ul li a {
+	display: block;
+	width: 16px;
+	height: 20px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+#calender_body .jqueryCalendar ul li.prev {
+	float: left;
+}
+
+#calender_body .jqueryCalendar ul li.next {
+	float: right;
+}
+
+#calender_body .jqueryCalendar ul li.prev a {
+	background: url(../img/left_b/calender_prev_b.gif) no-repeat left;
+}
+
+#calender_body .jqueryCalendar ul li.next a {
+	background: url(../img/left_b/calender_next_b.gif) no-repeat right;
+}
+
+#calender_body .jqueryCalendar .caption {
+	width: 120px;
+	height: 16px;
+	margin: -25px auto 0;
+	padding: 5px 0;
+	color: #c99b1f;
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 18px;
+}
+
+#calender_body .jqueryCalendar table {
+	width: 164px;
+}
+
+#calender_body .jqueryCalendar table thead th {
+	padding: 5px 0;
+	color: #cb8d35;
+	font-weight: bold;
+	font-size: 12px;
+	border-bottom: 1px solid #fff0c1;
+	text-align: center;
+}
+
+#calender_body td {
+	color: #b8874c;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #fff0c1;
+	text-align: center;
+	padding: 5px 0;
+}
+
+#calender_body td.sun,#calender_body td.sat,#calender_body td.event {
+	background-color: #fb995e;
+	color: #fff;
+}
+
+#calender_body td#calendar-2011-04-30 {
+	background: #ffe597;
+	color: #c99b1f;
+}
+
+
+#calender_body td.otherMonth {
+	filter: alpha(opacity=5);
+	  -moz-opacity:0.5;
+	  opacity:0.5;
+}
+
+.todayLink {
+	padding: 5px 0 2px;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.todayLink a {
+	color: #76c7e1;
+	text-decoration: none;
+}
+
+.todayLink a:hover {
+	color: #2c99d1;
+}
+
+#calender_txt {
+	border-top: 2px dotted #fff3bb;
+	width:160px;
+	padding: 5px;
+	background: #ffe597;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	letter-spacing: 2px;
+}
+
+#calender_txt p {
+	font-size: 10px;
+	color: #af6f3c;
+}
+
+#calender_txt p span {
+	background: #fb995e;
+	font-size: 12px;
+}
+
+#note01 #txt_body {
+	background:url(http://www.rakuten.ne.jp/gold/little-lanai/img/left_b/box01_body.gif) repeat-y;
+	padding: 5px 10px;
+	color: #954012;
+	font-size: 12px;
+	letter-spacing: 2.0px;
+	line-height: 18px;
+}

@@ -1,0 +1,712 @@
+li,ul,ol,br,a,img,h1,h2,h3,h4,h5,p,iframe {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+        color: #6c3412;
+}
+
+a:hover {
+	text-decoration: none;
+        color: #e13500;
+}
+
+.w380 {
+	width: 380px;
+}
+
+.w900 {
+	width: 900px;
+}
+
+.h_100 {
+	height: 100px;
+}
+
+
+.left {
+	float:left;
+}
+.right {
+	float: right;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+.pt_3 {
+	padding-top: 3px;
+}
+
+.pt_5 {
+	padding-top: 5px;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+
+.pt_15 {
+	padding-top: 15px;
+}
+
+.pb_10 {
+	padding-bottom: 10px;
+}
+
+.pb_15 {
+	padding-bottom: 15px;
+}
+
+.pl_10 {
+	padding-left: 10px;
+}
+
+.pr_10 {
+	padding-right: 10px;
+}
+
+.mt_5 {
+	margin-top: 5px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.ml_15 {
+	margin-left: 15px;
+}
+
+.mb_15 {
+	margin-bottom: 15px;
+}
+
+
+
+.title_h3 {
+	height: 30px;
+	padding-left: 15px;
+}
+
+.fs_10 {
+	font-size: 10px!important;
+}
+
+.fc_bio {
+	color: #75439b;
+}
+
+.fc_03 {
+	color:#a369c8;
+}
+
+.fc_fff {
+	color: #FFF;
+}
+
+.fs14 { font-sizse: 1.4em; } 
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	color: #50504f;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0;
+}
+
+
+/******************************************************* Category Page *******************************************************/
+
+
+#catcont {
+	width: 690px;
+}
+
+#catcont h1.orange {
+	padding: 5px 25px;
+	background: #ff7920;
+	border: 1px dashed white;
+	border-radius: 5px;
+	text-align: center;
+	color: #FFF;
+}
+
+#catcont .txtbox01 {
+	width: 580px;
+	border-bottom: 3px dotted #f5b25a;
+	padding: 20px 55px;
+}
+
+#catcont .txtbox01 p {
+	padding-top: 5px;
+	color: #564840;
+	letter-spacing: 1.4px;
+	line-height: 20px;
+}
+
+#catcont2 {
+	border: 5px solid #85bbc8;
+	padding: 25px;
+}
+
+
+#catcont2 h1.blue-line {
+	padding: 5px 25px;
+	border-bottom: 5px solid #85bbc8;
+	font-size: 2em;
+	text-align: center;
+	color: #7c6552;
+}
+
+#catcont2 h2 {
+	margin-top: 15px; 
+	padding: 2px 15px;
+	border-left: 7px solid #85bbc8;
+	border-bottom: 2px solid #85bbc8;
+	color: #7c6552;
+}
+
+#catcont2  p.cautiontxt { background: #ff7920; padding: 15px 10px; text-align: center; font-weight: bold; color:#FFF; font-size: 1.3em; }
+
+#catcont2 ul.listbox1 { padding: 10px; list-style: inside; border-bottom: 3px dotted #85bbc8; }
+
+#catcont2  ul li { margin-top: 10px; padding: 5px 10px; }
+
+.imgbox01 {
+	padding: 10px;
+	margin: 20px 14px;
+	text-align: center;
+	border: 2px solid #d0cccb;
+}
+
+#categori_box {
+	width: 690px;
+}
+
+.breadcrumbs_list {
+	text-decoration: none;
+        color: #6c3412 important!;
+}
+
+.breadcrumbs_list {
+	text-decoration: none;
+        color: #e13500 important!;
+}
+
+.breadcrumbs_list a {
+	text-decoration: none;
+        color: #6c3412 important!;
+}
+
+.breadcrumbs_list a:hover {
+	text-decoration: none;
+        color: #e13500 important!;
+}
+
+a.subcategory_list {
+	display: block;
+	letter-spacing: 1.2px;
+	line-height: 1.6;
+	margin: 0 2px 6px 6px;
+	font-weight:bold;
+}
+
+a.subcategory_list:hover {
+	display: block;
+	letter-spacing: 1.2px;
+	line-height: 1.6;
+	margin: 0 2px 6px 6px;
+	color:#B95B28;
+}
+
+.pack_t p {
+	font-size: 12px;
+	color: #4f2e1b;
+	line-height: 24px;
+	letter-spacing: 2.0px;
+}
+
+.pack_t .b_font{
+	font-size: 14px;
+	font-weight:bold;
+	color: #4f2e1b;
+	line-height: 24px;
+	letter-spacing: 2.0px;
+}
+
+#categori_box a:hover img {
+	opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+    filter: alpha(opacity=75); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=65)"; /* IE 8 */
+    -khtml-opacity: .75; /* Safari 1.x */
+    -moz-opacity: .75; /* FF lt 1.5, Netscape */
+}
+
+/********** クリスマスギフトラッピングカテゴリー説明 **************************/
+
+#wrapper10xmas {
+	width: 690px;
+}
+
+#10xmas_top {
+	background: url(https://image.rakuten.co.jp/little-lanai/cabinet/itemimg/10xmas_cat_top.jpg) no-repeat;
+	background-position: bottom;
+	width: 690px;
+	height: 130px;
+}
+
+#10xmas_body {
+	background: url(https://image.rakuten.co.jp/little-lanai/cabinet/itemimg/10xmas_cat_body.jpg) repeat-y;
+	padding: 10px 35px;
+}
+
+#10xmas_bot {
+	background: url(https://image.rakuten.co.jp/little-lanai/cabinet/itemimg/10xmas_cat_bot.jpg) no-repeat;
+	background-position: bottom;
+	width: 690px;
+	height: 39px;
+}
+
+#10xmas_body #wrapping_img {
+	width: 185px;
+}
+
+#10xmas_body #wrapping_txt {
+	width: 420px;
+}
+
+#10xmas_body p {
+	color: #FFF;
+	line-height: 30px;
+	letter-spacing: 3.0px;
+}
+
+
+/******************************************************* Item Page *******************************************************/
+
+.sale_desc #ap_area {
+	margin-bottom: 25px!important;
+}
+
+#ap_area {
+        width:710px;
+}
+
+#ap_area img {
+	text-align:center;
+}
+
+#ap_area p {
+	color: #998067;
+	line-height: 22px;
+	letter-spacing: 2.0px;
+}
+
+#ap_area h1 {
+	font-size: 16px;
+	font-weight:bold;
+	color:#65300d;
+        padding-bottom: 10px;
+}
+
+#ap_area h4 {
+	font-size: 16px;
+	font-weight:bold;
+	color:#65300d;
+        padding-bottom: 10px;
+}
+
+#ap_area .sizetxt01 {
+	border: 1px solid #f39800;
+	padding: 8px 12px;
+}
+
+#ap_area a:hover img {
+#categori_box a:hover img {
+	opacity: .6; /* Standard: FF gt 1.5, Opera, Safari */
+    filter: alpha(opacity=60); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=60)"; /* IE 8 */
+    -khtml-opacity: .6; /* Safari 1.x */
+    -moz-opacity: .6; /* FF lt 1.5, Netscape */
+}
+}
+
+#ozisan_sinagiretxt {
+	height: 100px;
+	width: 290px;
+	padding: 10px 80px 10px 20px;
+	background:url(https://www.rakuten.ne.jp/gold/little-lanai/img/ozisan_sinagire.gif) no-repeat right;
+	text-align:right;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#ozisan_toriyosetxt {
+	width: 290px;
+	height: 50px;
+	padding: 20px 0 25px 100px;
+	background:url(https://www.rakuten.ne.jp/gold/little-lanai/img/ozisan_toriyose.gif) no-repeat left;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#tsurube {
+	width: 280px;
+	height: 110px;
+	padding: 10px 10px 10px 100px;
+	background:url(https://www.rakuten.ne.jp/gold/little-lanai/img/tsurube.gif) no-repeat;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#tken {
+	width: 280px;
+	height: 85px;
+	padding: 10px 0 25px 100px;
+	background:url(https://www.rakuten.ne.jp/gold/little-lanai/img/tken.gif) no-repeat;
+	text-align:left;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+#ozisan04 {
+	width: 290px;
+	height: 110px;
+	padding: 10px 80px 10px 20px;
+	background:url(https://www.rakuten.ne.jp/gold/little-lanai/img/ozisan04.gif) no-repeat right;
+	text-align: right;
+	font-size: 12px;
+	font-weight:bold;
+	color:#4f301f;
+	line-height: 18px;
+	letter-spacing: 2px;
+}
+
+.asrak_bn {
+	padding: 5px 0 10px 0;
+}
+
+.hover_c a:hover img {
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+
+.msg01 {
+	width: 340px;
+	padding: 10px;
+	background: #ff6c61;
+	text-align: center;
+	font-size: 1.1em;
+	color: #FFF;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+.msg02 {
+	width: 340px;
+	background:#777777;
+	padding:10px;
+	font-size:1em;
+	line-height: 1.4em;
+	letter-spacing: 2.0px;
+	font-weight: 400;
+	color:#FFF;
+}
+
+/****************** 商品説明文 *********************/
+span.catch_copy {
+	display: block !important;
+}
+
+#item_detail {
+	width: 330px;
+	background: #d9d9d9;
+	margin-top: 3px;
+	padding: 15px;
+	color: #4e4e4e;
+	border-radius: 2px; 
+}
+
+#item_maintxt {
+	width: 330px;
+	background: #ebebeb;
+	margin-top: 3px;
+	padding: 15px;
+	color: #4e4e4e;
+	letter-spacing: 2.0px;
+	border-radius: 2px;
+}
+
+#item_addtxt {
+	background: #ff5454;
+	border: dotted 2px #7609a4;
+	width: 346px;
+	margin-top: 3px;
+	padding: 8px 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #720505;
+	line-height: 24px;
+	letter-spacing: 2.0px;
+}
+
+.item_info {
+    border: 1px solid #ab2fac !important;
+    background-color: #faeaf3;
+    padding: 15px 20px;
+}
+
+.item_info ul {
+	margin-left: 20px;
+}
+	
+
+.item_info li {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: #573649;
+list-style: disc;
+}
+
+.item_info p {
+	font-size: 12px;
+	letter-spacing: 2px;
+	line-height: 1.6;
+	color: #573649;
+}
+
+.item_info02 {
+	border:double #debd64 !important;
+	background-color: #F9ECBF;
+	padding: 10px 0;
+}
+
+.item_info02 p {
+	font-size: 16px;
+	font-weight:bold;
+	color:#EE5B81;
+	text-align:center;
+}
+
+.ap_table {
+	text-align:center;
+	font-size: 12px;
+	color: #998067;
+	line-height: 18px;
+	letter-spacing: 1.6px;
+}
+
+.ap_table #b_01 {
+	border:1px solid #B39C82;
+}
+
+#ap_table_txt01 {
+	font-size: 12px;
+	color: #998067;
+	line-height: 22px;
+	letter-spacing: 2.0px;
+}
+
+/*  ネコポス　　*/
+table.item_nekopos {
+    border: 4px solid #434343;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+table.item_nekopos th {
+	padding-bottom: 10px
+}
+table.item_nekopos  .nekopos-chui p {
+	background: #f8ff46;
+	padding: 5px 10px;
+	margin: 0 5px;
+	text-align: center;
+	font-weight: 600;
+}
+table.item_nekopos ul {
+	margin: 20px 0 0px 20px;
+}
+table.item_nekopos li {
+    letter-spacing: 2px;
+    line-height: 1.6;
+	list-style: disc;
+}
+.muryoitem-nekopos {
+	background: #f8ff46;
+	padding: 0.7em;
+	text-align: center;
+	font-size: 1.1em;
+	color: #323232;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+
+
+/****************************************** 年末年始　お知らせ ***************************************************************/
+
+#oshirase10_11_top {
+	background: url(https://www.rakuten.ne.jp/gold/little-lanai/img/banner/header/1101_oshirase_top.jpg) no-repeat bottom;
+	height: 40px;
+}
+
+#oshirase10_11 {
+	background: url(https://www.rakuten.ne.jp/gold/little-lanai/img/banner/header/1101_oshirase_body.jpg) no-repeat right bottom #533d28;
+	padding: 5px 100px 0 15px;
+	font-size: 12px;
+	color: #fbe5bb;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+#oshirase10_11_bot {
+	background: url(https://www.rakuten.ne.jp/gold/little-lanai/img/banner/header/1101_oshirase_bot.jpg) no-repeat top;
+	height: 4px;
+}
+
+/******************** 連休 ************************/
+#head_renqtxt {
+	background: #ffe7af;
+	margin-top: 5px;
+	border: 5px solid #bc76d9;
+	padding: 10px 25px 5px 25px;
+	color:#853b77;
+	width: 840px;
+}
+
+#head_renqtxt h6 {
+	margin: 0;
+	padding: 0;
+	color:#fa528a;
+	font-size:16px;
+	padding-bottom: 3px;
+	font-weight:bold;
+	letter-spacing:4.0px;
+}
+
+#head_renqtxt p {
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+	padding-bottom: 3px;
+	letter-spacing:2.0px;
+	line-height: 16px;
+}
+
+#head_renqtxt p span.fc_pink {
+	color: #c020dd;
+}
+
+#head_renqtxt .fw_b {
+	font-weight: bold;
+}
+
+
+/****************************************** ヘッダー部分　臨時　お知らせ ***************************************************************/
+
+#head_oshirasetxt {
+	margin: 10px 0;
+	background: #dcdcdc;
+	width: 860px;
+	padding: 10px 20px;
+}
+
+#head_oshirasetxt h6 {
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	font-size:18px;
+	text-align: center;
+	border-bottom: 2px solid #FFF;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+
+#head_oshirasetxt p {
+	letter-spacing:1.6px;
+	font-size:15px;
+}
+
+#head_oshirasetxt p span {
+	color: #fd5c8d;
+	font-weight: normal;
+}
+
+#head_oshirasetxt .fw_b {
+	font-weight: bold;
+	color: #8b4e21;
+}
+
+/* --------------- 商品説明部分  ラスムス　説明 --------------- */
+.cat-toptxt h2 {
+	font-size: 2em;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	text-align: center;
+	border-bottom: 5px solid #d82717;
+}
+.cat-toptxt p {
+	font-size: 1.2em;
+	line-height: 2em;
+	margin: 10px 20px;
+}
+
+
+/*----------- 右サイドバナー ----------*/
+body {
+	position: relative;
+}
+.bnr-Rside {
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 75px;
+	right: 5px;
+	display: table;
+	width: 160px;
+	height: 160px;
+	border: 1px solid #FFF;
+	border-radius: 80px 80px 80px 5px;
+	background: rgb(248,172,26);
+	background: linear-gradient(130deg, rgba(248,172,26,1) 0%, rgba(234,66,220,1) 100%);
+	opacity: 0.85;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+.bnr-Rside p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFF;
+}

@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3,img,a,p,br,table,th,td {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.b_bot01 {
+	border-bottom: 1px solid #d4c5d6;
+}
+
+.pt_5 {
+	padding-top: 5px;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+
+.w_690 {
+	width:690px;
+}
+
+
+
+#newitem {
+	width: 690px;
+	margin-top: 10px;
+}
+
+
+#newitem_table {
+	width: 688px;
+	border: 1px solid #d4c5d6;
+	border-bottom: none;
+}
+
+#newitem_table td {
+	text-align:center;
+}
+
+#newitem_table td a {
+	color: #6e6e6e;
+}
+
+#newitem_table td a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+
+.newitem_img {
+	padding: 5px 0;
+}
+
+.newitem_txt {
+	font-size: 10px;
+	padding: 0 5px 5px 5px;
+	line-height: 14px;
+	letter-spacing: 1.2px;
+}
+
+a.subcategory_list {
+	display: block;
+	letter-spacing: 1.2px;
+	line-height: 1.6;
+	margin: 0 2px 6px 6px;
+	font-weight:bold;
+}
+
+a.subcategory_list:hover {
+	display: block;
+	letter-spacing: 1.2px;
+	line-height: 1.6;
+	margin: 0 2px 6px 6px;
+	color:#B95B28;
+}
+
+
+.pushitem_t p {
+	font-size: 10px;
+	letter-spacing: 1.2px;
+	line-height: 1.4;
+	color:#5b5f48;
+	padding: 3px 8px;
+}
+
+.pushitem_t a:hover img {
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	opacity:0.6;
+}
+
+.pushitem_t_chgimg p {
+	font-size: 10px;
+	letter-spacing: 1.2px;
+	line-height: 1.4;
+	color:#FFFFFF;
+	padding: 3px 8px;
+}
+
+#ap_area .sizetxt01 {
+	border: 1px solid #f39800;
+	padding: 8px 12px;
+}
+
+#ap_area a:hover img {
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	opacity:0.6;
+}
+
+#tuideni a:hover img {
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+
+.hover_c a:hover img {
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+
+
+
+/************* カラー選択テーブル ****************/
+
+/* タイトル */
+.inventory_title {
+	color: #775c3f !important;
+	font-size: 12px !important;
+	letter-spacing: 2.0px !important;
+	line-height: 20px;
+	padding: 10px;
+}
+
+/* 項目 */
+.inventory_choice_name {
+	background: #f9f6e3 !important;
+	font-size: 12px !important;
+	color: #614324 !important;
+	padding: 5px;
+}
+
+/* チェック部分 */
+.inventory_soldout {
+	color: #74695d !important;
+	font-size: 12px !important;
+}
+
+/* ラジオボタン */
+.inventory input {
+	margin:0; border:none;
+	cursor:auto; background:none;
+} 
+
+*html .inventory input{
+	width:auto;
+	border:none;
+} /* IE */
+
+/* 売り切れ */
+.inventory_desc {
+	color: #775c3f !important;
+	font-size: 12px !important;
+	letter-spacing: 2.0px !important;
+	padding: 7px;
+	line-height: 20px;
+}
+
+
+/* 残りわずか表示 */
+span.rest {
+	color: #a05dca !important;
+	font-size: 13px !important;
+	letter-spacing: 2.0px !important;
+	padding: 7px;
+	line-height: 20px;
+}
+
+
+
+/*********************** カテゴリーデザイン *****************************/
+#categori_box a:hover img {
+	opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+    filter: alpha(opacity=75); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=65)"; /* IE 8 */
+    -khtml-opacity: .75; /* Safari 1.x */
+    -moz-opacity: .75; /* FF lt 1.5, Netscape */
+}
+
+
+
+

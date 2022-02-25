@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+h3,img,a,p,br,table,th,td {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.title_h3 {
+	height: 30px;
+	padding: 0 0 0 15px;
+	line-height: 0;
+}
+
+.fc_03 {
+	color:#a369c8;
+}
+
+.fc_04 {
+	color:#5a8106;
+}
+
+.pl_10 {
+	padding-left: 10px;
+}
+
+.pr_10 {
+	padding-right: 10px;
+}
+
+.left {
+	float:left;
+}
+.right {
+	float: right;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+/********************** Information corner **********************/
+
+#information {
+	width: 900px;
+	padding-top: 15px;
+}
+
+
+#information h3 {
+	width: 900px;
+}
+
+#information table {
+	border: 1px solid #d4c5d6;
+	border-top: none;
+}
+
+#information td {
+	vertical-align:top;
+	padding-bottom: 10px;
+}
+
+#information h4 {
+	width: 280px;
+	margin: 10px 0 0;
+	padding: 7px 0;
+	background: #e2ceee;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight:bold;
+	color:#846688;
+	text-align:center;
+	letter-spacing: 2px;
+}
+
+#information h4 p {
+	text-align:right;
+	padding-top: 10px;
+}
+
+#information h5 {
+	width: 264px;
+	margin: 10px 5px 0 0;
+	padding: 0 0 5px 0px;
+	border-bottom: 2px solid #e2ceee;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color:#9e79b5;
+}
+
+
+#information p {
+	width: 270px;
+	padding: 5px;
+	font-size: 10px;
+	color:#525252;
+	letter-spacing: 1.8px;
+	line-height: 18px;
+}
+
+#information table a {
+	color:#c04eca;
+	font-weight:bolder;
+}
+
+#information table a:hover {
+	color:#ffa163;
+}
+
+#camp_box {
+	background-color: #ffd6ec;
+	padding: 10px;
+	margin: 10px 10px 25px 10px;
+	font-size: 12px;
+	color:#b62f6b;
+	letter-spacing: 2.4px;
+	line-height: 22px;
+	border: 3px dotted #fff;
+}
+
+#camp_box h6 {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 10px;
+	color:#b01c5e;
+	letter-spacing: 1.8px;
+	font-weight:bold;
+	border-bottom: 2px dashed #e688b2;
+}
+
+
+
+/********************** Footer **********************/
+
+#footer {
+	width: 900px;
+	padding: 10px 0 15px 0;
+	text-align:center;
+	font-size: 12px;
+}
+
+#footer ul {
+	width: 380px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footer ul li {
+	height: 12px;
+	display:block;
+	list-style: none;
+	border-left: 1px solid #755226;
+	padding: 0 15px;
+}
+
+#footer ul #home {
+	border:none;
+}
+
+#footer ul li a {
+	color:#745A4B;
+}
+
+#footer ul li a:hover {
+	color:#A6673E;
+}
+
+#footer p {
+	padding-top: 10px;
+	font-size: 10px;
+	color: #7C7256;
+	letter-spacing: 1.8px;
+}
+
+
+
